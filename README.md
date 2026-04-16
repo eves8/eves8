@@ -15,4 +15,4 @@ Building technical moats for frontier startups by sourcing the rarest 0.01% of t
 
 ## 📫 Connect with me
 * **Website:** [sourcechain.io](https://sourcechain.io)
-* **Email:** [eveivanka8@gmail.com](mailto:eveivanka8@gmail.com)
+* **Email:** [eve@sourcechain.io](mailto:eve@sourcechain.io)
