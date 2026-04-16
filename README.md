@@ -24,5 +24,5 @@ The rarest engineering talent isn't found through standard searches. I manage th
 
 ---
 
-## 📫 Let's Scale
+## 📫 Let's Scale Together
 [**sourcechain.io**](https://sourcechain.io) | [**Email Me**](mailto:eve@sourcechain.io)
