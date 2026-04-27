@@ -1,6 +1,6 @@
 # Eve Miller | Embedded Startup Partner
 
-### **Building technical moats for frontier startups by sourcing the 0.01%.**
+### **Building technical moats for frontier startups by sourcing the top 1%.**
 
 The rarest engineering talent isn't found through standard searches. I manage the deep-sourcing and high-volume outreach required to secure the world's most capable algorithmic thinkers and technical leaders.
 
