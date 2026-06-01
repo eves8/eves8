@@ -8,6 +8,7 @@ The rarest engineering talent isn't found through standard searches or high-volu
 
 ## 🚀 The Edge
 * **Scaling Specialist:** 10+ years of experience and **500+ hires** across AI, Web3, Fintech, Adtech, Adtech and Cybersecurity.
+* **Contractor Provisioning:** Beyond permanent search, I source, vet, and outsource elite technical contractors, providing startups with rapid access to senior talent without long-term overhead.
 * **The Elite Pipeline:** Proven access to world-class talent, from **IOI/IMO/ICPC medalists** and **Ivy League** researchers to senior engineers at Tier-1 Silicon Valley firms.
 * **Embedded Partner:** Acting as your in-house talent lead, building ATS infrastructure and hiring culture from the ground up.
 
