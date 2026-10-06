@@ -1,22 +1,32 @@
+<div align="center">
+
 # Eve Miller
 
-### Talent partner to founders scaling technical teams.
+### Your talent partner for scaling up 🚀
 
-For over a decade I've helped VC-backed startups hire the engineers, researchers and leaders they couldn't reach on their own: people who weren't looking until the right conversation came along.
+<img src="https://img.shields.io/badge/Hires-500%2B-16a34a?style=flat-square" alt="500+ hires"> <img src="https://img.shields.io/badge/Experience-10%2B%20years-16a34a?style=flat-square" alt="10+ years"> <img src="https://img.shields.io/badge/Stage-Seed%20to%20Series%20B-16a34a?style=flat-square" alt="Seed to Series B"> <img src="https://img.shields.io/badge/Coverage-US%20%C2%B7%20Europe%20%C2%B7%20EMEA-16a34a?style=flat-square" alt="US, Europe, EMEA">
 
-**500+ hires** &nbsp;·&nbsp; **10+ years** &nbsp;·&nbsp; **Seed to Series B** &nbsp;·&nbsp; **Engineering · Product · GTM · Leadership**
+<a href="https://linkedin.com/in/eve8"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square" alt="LinkedIn"></a> <a href="https://sourcechain.io"><img src="https://img.shields.io/badge/Sourcechain-Website-0b2e1f?style=flat-square" alt="sourcechain.io"></a>
+
+</div>
+
+For over a decade, across the US, Europe and EMEA, I've helped VC-backed startups hire the engineers, researchers and leaders they couldn't reach on their own: people who weren't looking until the right conversation came along.
+
+**Engineering · Product · Go-to-market · Leadership**
 
 ---
 
-### Track record
+### 📈 Track record
 
-- **BitGo:** scaled the company **from 30 to 120 people in one year** as sole recruiting lead, building its recruiting and HR function along the way. BitGo is now publicly listed.
-- **Ava Labs:** **35+ hires in 9 months** through mainnet launch, with a contract recruiting team I built and led
-- **OpenBlock Labs:** grew the team **from 5 to 45**, partnering with the co-founders on engineering and research hiring
-- **bloXroute Labs:** **15+ hires in 9 months**, from backend and SRE to VP Finance and sales leadership
-- **FocusKPI:** **40+ data scientists and engineers** placed with enterprise clients, generating **$1M in billed revenue**
+| Company | Outcome |
+|---|---|
+| **BitGo** | Scaled the company **from 30 to 120 people in one year** as sole recruiting lead, building its recruiting and HR function along the way. Now publicly listed. |
+| **Ava Labs** | **35+ hires in 9 months** through mainnet launch, with a contract recruiting team I built and led |
+| **OpenBlock Labs** | Grew the team **from 5 to 45**, partnering with the co-founders on engineering and research hiring |
+| **bloXroute Labs** | **15+ hires in 9 months**, from backend and SRE to VP Finance and sales leadership |
+| **FocusKPI** | **40+ data scientists and engineers** placed with enterprise clients, generating **$1M in billed revenue** |
 
-### How I partner
+### 🤝 How I partner
 
 Every engagement is built around your hiring goal. We set the scope, structure and pace together, and adjust them as your plans change.
 
@@ -28,7 +38,7 @@ Every engagement is built around your hiring goal. We set the scope, structure a
 
 **Recruiting automation.** AI agents that take on the repetitive work, from sourcing research to outreach follow-ups and pipeline tracking, so your team spends its time with candidates.
 
-### What I bring to every search
+### 🎯 What I bring to every search
 
 **I go deep on your product.** Before I reach out to anyone, I learn what you're building, the technical challenges and the team, so candidates hear a story worth leaving their job for.
 
@@ -40,7 +50,7 @@ Every engagement is built around your hiring goal. We set the scope, structure a
 
 **You get a short list.** Candidates who fit the role and are ready to move, with close support through offer and acceptance.
 
-### Teams I've hired for
+### 🏢 Teams I've hired for
 
 **OpenBlock Labs** · **Ava Labs** · **BitGo** · **Circle** · **CertiK** · **bloXroute Labs** · **Axelar** · **Hashflow** · **Ankr** · **Intertrust**
 
@@ -48,18 +58,22 @@ Most of my work has been in AI, fintech, blockchain and security, and the same a
 
 Engineering across the stack, data and ML, security and infrastructure, product and design, plus go-to-market and executive hires from VP Sales to CSO.
 
-### Across time zones and languages
+### 🌍 Global reach
 
-Working across US and European business hours.<br>
-Fluent in English, German and Slovak.
+I've hired for teams from Silicon Valley and New York to London, Tel Aviv and everywhere in between, including fully remote companies spread over several time zones.
+
+Raised in Slovakia, I spent ten years in Germany and Austria, then built my recruiting career in Silicon Valley. I'm fluent in English, German and Slovak.
+
+**Covering the US, Europe and EMEA**, working across US and European business hours.
 
 ---
 
-### For engineers and operators
+### 👋 For engineers and operators
 
 If you're quietly open to the right opportunity, I'd be glad to hear from you. Conversations are confidential, and your profile is never shared without your consent.
 
-### Let's talk
+### 💬 Let's talk
 
-I partner with a small number of companies at a time.<br>
-**[Connect on LinkedIn →](https://linkedin.com/in/eve8)** &nbsp;·&nbsp; [sourcechain.io](https://sourcechain.io)
+I partner with a small number of companies at a time.
+
+<a href="https://linkedin.com/in/eve8"><img src="https://img.shields.io/badge/Start%20a%20conversation-LinkedIn-0A66C2?style=for-the-badge" alt="Start a conversation on LinkedIn"></a>
