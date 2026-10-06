@@ -68,34 +68,47 @@ Raised in Slovakia, I spent ten years in Germany and Austria, then built my recr
 
 ---
 
-### 🔎 Open searches
+### 🔥 Now hiring
 
-<sub>Updated October 2026 · Company names shared once we talk</sub>
+**Could one of these be your next move?** Or do you know someone who'd be perfect? Let's talk.
 
-#### Senior Software Engineer, Full-Stack
-**Fintech startup · New York, on-site · $150K–$200K + equity**
-- 5–10 years building production software, ideally at startups or fast-moving teams
-- Go on the backend and React on the front end (other modern stacks considered)
-- Strong CS or EE foundation; lending or mortgage-tech experience is a big plus
-- Visa sponsorship available
+<sub>Updated October 2026</sub>
 
-#### Mobile Engineering Team Lead
-**Consumer marketplace · New York, hybrid (2 days on-site) · $180K–$210K**
-- 10+ years building software, including leading a small team (formally or informally)
+#### Senior Software Engineer, Backend / Full-Stack · AI mortgage-tech startup
+📍 New York, in office (WFH Wednesdays) &nbsp;·&nbsp; 💰 $150K–$200K + equity + bonus &nbsp;·&nbsp; Visa sponsorship possible
+
+Build AI agents that take a borrower from application to underwriting decision, at a Series A startup led by founders who've done it before.
+- 3+ years of backend or full-stack engineering
+- Go on the backend, React or React Native on the front end
+- CS, EE, Math or a related degree; mortgage, lending or fintech experience is a plus
+
+#### Senior DevSecOps Engineer · Global investment firm
+📍 New York (preferred), Irvine or Charlotte, hybrid 3 days &nbsp;·&nbsp; 💰 NY base $169K–$270K + up to 25% bonus &nbsp;·&nbsp; US work authorization required
+
+Own and scale the in-house DevSecOps platform that secures how every development team ships to the cloud.
+- 7+ years in DevOps, platform, SRE, infrastructure or security engineering
+- Expert, hands-on Python and AWS
+- Deep CI/CD, Kubernetes and Terraform, with real end-to-end ownership
+
+#### Mobile Engineering Team Lead · Consumer marketplace
+📍 New York, hybrid (2 days on-site) &nbsp;·&nbsp; 💰 $180K–$210K &nbsp;·&nbsp; US work authorization required
+
+Own an iOS-first consumer app and lead a small, senior team.
+- 10+ years building software, including leading a team (formally or informally)
 - Deep native iOS (Swift, SwiftUI), plus solid Android (Kotlin, Jetpack)
 - High-traffic consumer products; e-commerce, payments or live events a plus
-- US work authorization required
 
-#### Lead Product Designer, B2B
-**Consumer marketplace · New York, hybrid (2+ days on-site) · $185K–$200K**
+#### Lead Product Designer, B2B · Consumer marketplace
+📍 New York, hybrid (2+ days on-site) &nbsp;·&nbsp; 💰 $185K–$200K &nbsp;·&nbsp; US work authorization required
+
+Shape the partner-facing tools that power a consumer marketplace.
 - 10+ years and still hands-on in Figma
 - Deep B2B design: dashboards, admin tools, permissions and design systems
 - A blend of B2B and consumer work is ideal
-- US work authorization required
 
-**Know someone who fits?** Send me their LinkedIn or introduce us. Every referral is handled with care, and I'll keep you posted.
+**Sound like you, or someone you know?** Message me on LinkedIn. Every conversation stays confidential, and every referral is handled with care.
 
-<a href="https://linkedin.com/in/eve8"><img src="https://img.shields.io/badge/Refer%20someone-LinkedIn-16a34a?style=for-the-badge" alt="Refer someone on LinkedIn"></a>
+<a href="https://linkedin.com/in/eve8"><img src="https://img.shields.io/badge/I'm%20interested-Let's%20talk-16a34a?style=for-the-badge" alt="I'm interested"></a> <a href="https://linkedin.com/in/eve8"><img src="https://img.shields.io/badge/Refer%20someone-LinkedIn-0A66C2?style=for-the-badge" alt="Refer someone"></a>
 
 ### 👋 For engineers and operators
 
