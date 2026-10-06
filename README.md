@@ -1,44 +1,65 @@
 # Eve Miller
 
-**Embedded recruiter, fractional talent partner, sourcer on demand.**<br>
-Technical and GTM hiring for high-growth startups.
+### Talent partner to founders scaling technical teams.
 
-I find people who aren't looking, and I only send you the ones who will actually move. Ten years, 250+ hires, seed through Series B — working directly with founders, CTOs and the people teams already in place.
+For over a decade I've helped VC-backed startups hire the engineers, researchers and leaders they couldn't reach on their own: people who weren't looking until the right conversation came along.
 
-### How I plug in
+**500+ hires** &nbsp;·&nbsp; **10+ years** &nbsp;·&nbsp; **Seed to Series B** &nbsp;·&nbsp; **Engineering · Product · GTM · Leadership**
 
-**Embedded / fractional.** I work as part of your team — in your ATS, in your Slack, in your hiring manager meetings. Contract, part-time or full-load depending on what the quarter looks like.
+---
 
-**Recruiter on demand.** Spin up for a hiring push, spin down when it's met. No retainer, no minimum term, no headcount on your books.
+### Track record
 
-**Micro-RPO.** For teams with no recruiting function yet: I'll run the whole thing and build it while I run it — ATS implementation, comp benchmarks, interview structure, scorecards, handbook and benefits. I've stood recruiting up from zero more than once, and hired and led recruiting teams to take it over.
+- **BitGo:** scaled the company **from 30 to 120 people in one year** as sole recruiting lead, building its recruiting and HR function along the way. BitGo is now publicly listed.
+- **Ava Labs:** **35+ hires in 9 months** through mainnet launch, with a contract recruiting team I built and led
+- **OpenBlock Labs:** grew the team **from 5 to 45**, partnering with the co-founders on engineering and research hiring
+- **bloXroute Labs:** **15+ hires in 9 months**, from backend and SRE to VP Finance and sales leadership
+- **FocusKPI:** **40+ data scientists and engineers** placed with enterprise clients, generating **$1M in billed revenue**
 
-**Sourcing-only.** If your recruiters are strong but drowning, I take the top of the funnel and hand off qualified, engaged candidates.
+### How I partner
 
-### How I work the search
+Every engagement is built around your hiring goal. We set the scope, structure and pace together, and adjust them as your plans change.
 
-**Calibration first.** A real intake with the hiring manager — not a job description. What does great look like, what's genuinely disqualifying, what will this person's first six months actually be. I'd rather spend an hour there than send you thirty near-misses.
+**Embedded partnership.** I join your team, work inside your tools and own hiring from intake to signed offer.
 
-**Market mapping before outreach.** I build the full landscape of who exists and where, then work it systematically. Named searches, competitive programming and research backgrounds, domain depth — whatever your bar is, that's what I map against.
+**Executive and specialist search.** Focused searches for the roles that stall: senior engineers, research talent and leadership.
 
-**Personalized outreach, not templates.** Passive candidates ignore mail merges. Response rates come from knowing what the person actually built.
+**Building the function.** For companies hiring their first recruiter: process, tooling, interview design and compensation frameworks, built to last after I hand them over.
 
-**Screening for readiness, not just fit.** This is the part most sourcing misses. Before anyone reaches you, I've established motivation to move, compensation expectations, timeline, location and visa reality, and what would make them say no. A perfect profile who isn't leaving their job is a waste of your time and mine.
+**Recruiting automation.** AI agents that take on the repetitive work, from sourcing research to outreach follow-ups and pipeline tracking, so your team spends its time with candidates.
 
-**A short, calibrated shortlist.** Few candidates, high hit rate. I'd rather submit three you want to meet than twelve you have to sort.
+### What I bring to every search
 
-**Close support.** Offer stage is where searches die. I stay in it through acceptance and start date.
+**I go deep on your product.** Before I reach out to anyone, I learn what you're building, the technical challenges and the team, so candidates hear a story worth leaving their job for.
 
-### Where I've done it
+**I love sourcing.** It's my favorite part of the work. I map the whole market, from open-source work to research and competition results, and keep experimenting with new channels, tools and approaches to reach the people others miss.
 
-AI and coding agents, blockchain infrastructure, digital asset custody, cybersecurity, data science consulting, enterprise SaaS and trusted computing. Selected teams: **OpenBlock Labs**, **Ava Labs**, **BitGo**, **bloXroute**, **Circle**, **CertiK**, **Axelar**, **Intertrust**.
+**I recalibrate constantly.** Every conversation teaches us something about the market. I bring it back to you and sharpen the search as we go.
 
-I've changed sectors repeatedly and it has never been the hard part. Sourcing craft transfers; the domain is homework. If your product is adjacent to something on that list — or nothing like it — the conversation is the same one.
+**I don't give up.** When a role is hard to fill, I find another way in, and keep improving the approach until we get it right.
 
-Roles have run well past engineering: VP Sales, VP Finance, VP Product, CSO, CLO, marketing and BD leadership, product designers, data scientists.
+**You get a short list.** Candidates who fit the role and are ready to move, with close support through offer and acceptance.
 
-### Engagements
+### Teams I've hired for
 
-Fractional and invoiced monthly. No retainer, no minimum term, no overhead on your side. US/EU hours.
+**OpenBlock Labs** · **Ava Labs** · **BitGo** · **Circle** · **CertiK** · **bloXroute Labs** · **Axelar** · **Hashflow** · **Ankr** · **Intertrust**
 
-📫 [LinkedIn](https://linkedin.com/in/eve8) 
+Most of my work has been in AI, fintech, blockchain and security, and the same approach carries across tech, from SaaS and developer tools to consumer apps and marketplaces.
+
+Engineering across the stack, data and ML, security and infrastructure, product and design, plus go-to-market and executive hires from VP Sales to CSO.
+
+### Across time zones and languages
+
+Working across US and European business hours.<br>
+Fluent in English, German and Slovak.
+
+---
+
+### For engineers and operators
+
+If you're quietly open to the right opportunity, I'd be glad to hear from you. Conversations are confidential, and your profile is never shared without your consent.
+
+### Let's talk
+
+I partner with a small number of companies at a time.<br>
+**[Connect on LinkedIn →](https://linkedin.com/in/eve8)** &nbsp;·&nbsp; [sourcechain.io](https://sourcechain.io)
