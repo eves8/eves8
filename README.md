@@ -68,6 +68,35 @@ Raised in Slovakia, I spent ten years in Germany and Austria, then built my recr
 
 ---
 
+### 🔎 Open searches
+
+<sub>Updated October 2026 · Company names shared once we talk</sub>
+
+#### Senior Software Engineer, Full-Stack
+**Fintech startup · New York, on-site · $150K–$200K + equity**
+- 5–10 years building production software, ideally at startups or fast-moving teams
+- Go on the backend and React on the front end (other modern stacks considered)
+- Strong CS or EE foundation; lending or mortgage-tech experience is a big plus
+- Visa sponsorship available
+
+#### Mobile Engineering Team Lead
+**Consumer marketplace · New York, hybrid (2 days on-site) · $180K–$210K**
+- 10+ years building software, including leading a small team (formally or informally)
+- Deep native iOS (Swift, SwiftUI), plus solid Android (Kotlin, Jetpack)
+- High-traffic consumer products; e-commerce, payments or live events a plus
+- US work authorization required
+
+#### Lead Product Designer, B2B
+**Consumer marketplace · New York, hybrid (2+ days on-site) · $185K–$200K**
+- 10+ years and still hands-on in Figma
+- Deep B2B design: dashboards, admin tools, permissions and design systems
+- A blend of B2B and consumer work is ideal
+- US work authorization required
+
+**Know someone who fits?** Send me their LinkedIn or introduce us. Every referral is handled with care, and I'll keep you posted.
+
+<a href="https://linkedin.com/in/eve8"><img src="https://img.shields.io/badge/Refer%20someone-LinkedIn-16a34a?style=for-the-badge" alt="Refer someone on LinkedIn"></a>
+
 ### 👋 For engineers and operators
 
 If you're quietly open to the right opportunity, I'd be glad to hear from you. Conversations are confidential, and your profile is never shared without your consent.
