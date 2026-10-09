@@ -36,10 +36,10 @@ My own recruiting runs on AI agents I designed and maintain. They take on the re
 - **Verified contact data.** Work emails come from enrichment tools and are checked before any outreach. Nothing is guessed.
 - **Personalized outreach.** Messages and follow-ups are drafted from each candidate's real background and reviewed before they go out.
 - **Reply monitoring.** Replies across email and LinkedIn are picked up, triaged and logged, so nobody falls through the cracks.
-- **Pipeline tracking.** Candidate status lives in Google Sheets and updates as conversations move.
-- **Hiring system.** I'm building an ATS on Google Workspace that matches past candidates to new roles.
+- **Pipeline tracking.** Candidate status updates automatically as conversations move.
+- **Hiring system.** I'm building an ATS that matches past candidates to new roles.
 
-Built with Claude, Google Workspace, Apps Script, LinkedIn Recruiter, SalesQL and GMass. If your team wants something similar, I set it up around your biggest bottleneck first.
+If your team wants something similar, I set it up around your biggest bottleneck first.
 
 ### 🤝 How I partner
 
