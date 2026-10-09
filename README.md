@@ -2,9 +2,9 @@
 
 # Eve Miller
 
-### Your talent partner for scaling up 🚀
+### Talent partner for scaling teams · Recruiting automation with AI agents
 
-<img src="https://img.shields.io/badge/Hires-500%2B-16a34a?style=flat-square" alt="500+ hires"> <img src="https://img.shields.io/badge/Experience-10%2B%20years-16a34a?style=flat-square" alt="10+ years"> <img src="https://img.shields.io/badge/Stage-Seed%20to%20Series%20B-16a34a?style=flat-square" alt="Seed to Series B"> <img src="https://img.shields.io/badge/Coverage-US%20%C2%B7%20Europe%20%C2%B7%20EMEA-16a34a?style=flat-square" alt="US, Europe, EMEA">
+<img src="https://img.shields.io/badge/Hires-500%2B-16a34a?style=flat-square" alt="500+ hires"> <img src="https://img.shields.io/badge/Experience-10%2B%20years-16a34a?style=flat-square" alt="10+ years"> <img src="https://img.shields.io/badge/Stage-Seed%20to%20Series%20B-16a34a?style=flat-square" alt="Seed to Series B"> <img src="https://img.shields.io/badge/Coverage-US%20%C2%B7%20Europe%20%C2%B7%20EMEA-16a34a?style=flat-square" alt="US, Europe, EMEA"> <img src="https://img.shields.io/badge/AI%20agents-Recruiting%20automation-6d28d9?style=flat-square" alt="AI recruiting automation">
 
 <a href="https://linkedin.com/in/eve8"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square" alt="LinkedIn"></a> <a href="https://sourcechain.io"><img src="https://img.shields.io/badge/Sourcechain-Website-0b2e1f?style=flat-square" alt="sourcechain.io"></a>
 
@@ -12,7 +12,9 @@
 
 For over a decade, across the US, Europe and EMEA, I've helped VC-backed startups hire the engineers, researchers and leaders they couldn't reach on their own: people who weren't looking until the right conversation came along.
 
-**Engineering · Product · Go-to-market · Leadership**
+I also build recruiting automation with AI agents. I run my own searches on it every day, and I set up the same kind of system for recruiting and HR teams who want to hire faster with the people they already have.
+
+**Engineering · Product · Go-to-market · Leadership · AI recruiting automation**
 
 ---
 
@@ -25,6 +27,19 @@ For over a decade, across the US, Europe and EMEA, I've helped VC-backed startup
 | **OpenBlock Labs** | Grew the team **from 5 to 45**, partnering with the co-founders on engineering and research hiring |
 | **bloXroute Labs** | **15+ hires in 9 months**, from backend and SRE to VP Finance and sales leadership |
 | **FocusKPI** | **40+ data scientists and engineers** placed with enterprise clients, generating **$1M in billed revenue** |
+
+### 🤖 Recruiting automation with AI agents
+
+My own recruiting runs on AI agents I designed and maintain. They take on the repetitive work so recruiters and hiring managers can spend their time with candidates. You stay the decision-maker; the agents do the legwork.
+
+- **Sourcing research.** Agents map target companies and shortlist profiles against the role brief, ready for a human review.
+- **Verified contact data.** Work emails come from enrichment tools and are checked before any outreach. Nothing is guessed.
+- **Personalized outreach.** Messages and follow-ups are drafted from each candidate's real background and reviewed before they go out.
+- **Reply monitoring.** Replies across email and LinkedIn are picked up, triaged and logged, so nobody falls through the cracks.
+- **Pipeline tracking.** Candidate status lives in Google Sheets and updates as conversations move.
+- **Hiring system.** I'm building an ATS on Google Workspace that matches past candidates to new roles.
+
+Built with Claude, Google Workspace, Apps Script, LinkedIn Recruiter, SalesQL and GMass. If your team wants something similar, I set it up around your biggest bottleneck first.
 
 ### 🤝 How I partner
 
