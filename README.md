@@ -117,14 +117,6 @@ Own an iOS-first consumer app and lead a small, senior team.
 - Deep native iOS (Swift, SwiftUI), plus solid Android (Kotlin, Jetpack)
 - High-traffic consumer products; e-commerce, payments or live events a plus
 
-#### Lead Product Designer, B2B · Consumer marketplace
-📍 New York, hybrid (2+ days on-site) &nbsp;·&nbsp; 💰 $185K–$200K &nbsp;·&nbsp; US work authorization required
-
-Shape the partner-facing tools that power a consumer marketplace.
-- 10+ years and still hands-on in Figma
-- Deep B2B design: dashboards, admin tools, permissions and design systems
-- A blend of B2B and consumer work is ideal
-
 **Sound like you, or someone you know?** Message me on LinkedIn. Every conversation stays confidential, and every referral is handled with care.
 
 <a href="https://linkedin.com/in/eve8"><img src="https://img.shields.io/badge/I'm%20interested-Let's%20talk-16a34a?style=for-the-badge" alt="I'm interested"></a> <a href="https://linkedin.com/in/eve8"><img src="https://img.shields.io/badge/Refer%20someone-LinkedIn-0A66C2?style=for-the-badge" alt="Refer someone"></a>
