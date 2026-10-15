@@ -25,6 +25,7 @@ I also set up the same kind of system for recruiting and HR teams who want to hi
 | Company | Outcome |
 |---|---|
 | **BitGo** | Scaled the company **from 30 to 120 people in one year** as sole recruiting lead, building its recruiting and HR function along the way. Now publicly listed. |
+| **Intertrust** | Grew the company **from 90 to 200 people**, hiring across engineering, cybersecurity, cryptography, sales, finance and product, including VP-level searches |
 | **Ava Labs** | **35+ hires in 9 months** through mainnet launch, with a contract recruiting team I built and led |
 | **OpenBlock Labs** | Grew the team **from 5 to 45**, partnering with the co-founders on engineering and research hiring |
 | **bloXroute Labs** | **15+ hires in 9 months**, from backend and SRE to VP Finance and sales leadership |
