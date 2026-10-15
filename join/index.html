@@ -214,7 +214,8 @@ textarea{min-height:88px;resize:vertical;line-height:1.5}
           <div class="f"><div class="lab" id="l-salary">Minimum base salary <span class="opt">USD</span></div><div class="combo" data-key="salary" data-labelledby="l-salary" data-ph="e.g. $180k"></div></div>
           <div class="f"><div class="lab" id="l-active">How actively are you looking?</div><div class="combo" data-key="status" data-labelledby="l-active" data-ph="Choose or type"></div></div>
           <div class="f"><div class="lab" id="l-start">When could you start?</div><div class="combo" data-key="start" data-labelledby="l-start" data-ph="Choose or type"></div></div>
-          <div class="f full"><label for="note">Anything else I should know? <span class="opt">optional</span></label><textarea id="note" placeholder="Your ideal next role, companies you'd love to work for, anything you'd rather avoid…"></textarea></div>
+          <div class="f full"><label for="avoid">Roles, industries or companies you're not interested in <span class="opt">optional</span></label><textarea id="avoid" placeholder="In your own words, e.g. no gambling or defense, no agencies, not my current employer…"></textarea></div>
+          <div class="f full"><label for="note">Anything else I should know? <span class="opt">optional</span></label><textarea id="note" placeholder="Your ideal next role, companies you'd love to work for…"></textarea></div>
           <div class="hp" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" tabindex="-1" autocomplete="off"></div>
           <label class="consent full" for="consent"><input type="checkbox" id="consent"><span>I agree that Eve Miller (Sourcechain) may keep these details and my resume in her own applicant tracking system and contact me about matching roles. They won't be shared with third parties, and I can ask for them to be deleted at any time.</span></label>
         </div>
@@ -442,7 +443,7 @@ function collect(){
   return {
     name:v('name'), email:v('email').toLowerCase(), linkedin:v('li'), title:v('title'), company:v('company'), city:v('city'), years:v('yrs'),
     roles:c('roles'), level:c('level'), setup:c('setup'), where:c('where'), relocate:c('relocate'), auth:c('auth'), salary:c('salary'), status:c('status'), start:c('start'),
-    note:v('note'), resume: state.file ? state.file.name : '', consent: $('#consent').checked, hp: v('website')
+    note:[v('avoid') && 'Not interested in: ' + v('avoid'), v('note')].filter(Boolean).join('\n\n'), avoid:v('avoid'), resume: state.file ? state.file.name : '', consent: $('#consent').checked, hp: v('website')
   };
 }
 $('#prefs').addEventListener('submit', e => e.preventDefault());
