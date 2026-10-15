@@ -2,7 +2,7 @@
 
 # Eve Miller
 
-### Talent partner for scaling teams · Recruiting automation with AI agents
+### AI-powered hiring partner for scaling teams · Hiring systems with AI agents
 
 <img src="https://img.shields.io/badge/Hires-500%2B-16a34a?style=flat-square" alt="500+ hires"> <img src="https://img.shields.io/badge/Experience-10%2B%20years-16a34a?style=flat-square" alt="10+ years"> <img src="https://img.shields.io/badge/Stage-Seed%20to%20Series%20B-16a34a?style=flat-square" alt="Seed to Series B"> <img src="https://img.shields.io/badge/Coverage-US%20%C2%B7%20Europe%20%C2%B7%20EMEA-16a34a?style=flat-square" alt="US, Europe, EMEA"> <img src="https://img.shields.io/badge/AI%20agents-Recruiting%20automation-6d28d9?style=flat-square" alt="AI recruiting automation">
 
@@ -12,9 +12,11 @@
 
 For over a decade, across the US, Europe and EMEA, I've helped VC-backed startups hire the engineers, researchers and leaders they couldn't reach on their own: people who weren't looking until the right conversation came along.
 
-I also build recruiting automation with AI agents. I run my own searches on it every day, and I set up the same kind of system for recruiting and HR teams who want to hire faster with the people they already have.
+Today every search I run is backed by AI agents I built and run every day. They cover the whole market and do the legwork, so my time goes where judgment matters: calibrating with hiring managers, assessing people and closing them. You get a senior recruiter with the reach of a team.
 
-**Engineering · Product · Go-to-market · Leadership · AI recruiting automation**
+I also set up the same kind of system for recruiting and HR teams who want to hire faster with the people they already have.
+
+**Engineering · Product · Go-to-market · Leadership · AI hiring systems**
 
 ---
 
@@ -28,16 +30,17 @@ I also build recruiting automation with AI agents. I run my own searches on it e
 | **bloXroute Labs** | **15+ hires in 9 months**, from backend and SRE to VP Finance and sales leadership |
 | **FocusKPI** | **40+ data scientists and engineers** placed with enterprise clients, generating **$1M in billed revenue** |
 
-### 🤖 Recruiting automation with AI agents
+### 🤖 How my AI agents work
 
-My own recruiting runs on AI agents I designed and maintain. They take on the repetitive work so recruiters and hiring managers can spend their time with candidates. You stay the decision-maker; the agents do the legwork.
+My own recruiting runs on AI agents I designed and maintain, working every weekday. They take on the repetitive work so recruiters and hiring managers can spend their time with candidates. You stay the decision-maker; the agents do the legwork.
 
-- **Sourcing research.** Agents map target companies and shortlist profiles against the role brief, ready for a human review.
-- **Verified contact data.** Work emails come from enrichment tools and are checked before any outreach. Nothing is guessed.
-- **Personalized outreach.** Messages and follow-ups are drafted from each candidate's real background and reviewed before they go out.
+- **Market mapping.** Agents map target companies and match profiles against the role brief, including past candidates who fit a new role.
+- **Verified before outreach.** Each person's current role is checked the same day, and contact details are verified. Nothing is guessed.
+- **Personalized outreach.** Messages are written from each candidate's real background, double-checked against the brief, and followed up on schedule.
 - **Reply monitoring.** Replies across email and LinkedIn are picked up, triaged and logged, so nobody falls through the cracks.
 - **Pipeline tracking.** Candidate status updates automatically as conversations move.
-- **Hiring system.** I'm building an ATS that matches past candidates to new roles.
+- **Market timing.** Layoffs at target companies are flagged daily, so strong people hear from you early.
+- **Hiring system.** My own ATS keeps every candidate, conversation and status in one place and matches past candidates to new roles.
 
 If your team wants something similar, I set it up around your biggest bottleneck first.
 
@@ -45,13 +48,13 @@ If your team wants something similar, I set it up around your biggest bottleneck
 
 Every engagement is built around your hiring goal. We set the scope, structure and pace together, and adjust them as your plans change.
 
-**Embedded partnership.** I join your team, work inside your tools and own hiring from intake to signed offer.
+**AI-powered hiring partner.** I join your team, work inside your tools and own hiring from intake to signed offer, with my agent system working alongside me.
 
 **Executive and specialist search.** Focused searches for the roles that stall: senior engineers, research talent and leadership.
 
 **Building the function.** For companies hiring their first recruiter: process, tooling, interview design and compensation frameworks, built to last after I hand them over.
 
-**Recruiting automation.** AI agents that take on the repetitive work, from sourcing research to outreach follow-ups and pipeline tracking, so your team spends its time with candidates.
+**A hiring system for your team.** I set up your own hiring system plus AI agents for market mapping, outreach, reply tracking and pipeline updates, starting with your biggest bottleneck. Your team stays in charge; the agents do the legwork.
 
 ### 🎯 What I bring to every search
 
