@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Share your details with Eve Miller (Sourcechain) to hear about roles that match what you want next.">
+<meta name="robots" content="noindex">
+<title>Sourcechain Join</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one focused column card over a quiet tinted ground; three real steps with a slim progress track. */
+:root{
+  --bg:#eef3f0; --surface:#ffffff; --surface-2:#f3f7f5; --fg:#15211d; --muted:#5a6b63; --line:#d6e0da;
+  --accent:#0d6e5f; --accent-fg:#ffffff; --accent-soft:#d9efe8; --warm:#b26a00; --warm-soft:#fbefd9;
+  --bad:#ad3636; --focus:#0d6e5f;
+  --f-display:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e1513; --surface:#151e1b; --surface-2:#1b2622; --fg:#e4ede8; --muted:#97a89f; --line:#2a3631;
+  --accent:#4fc7ad; --accent-fg:#06221c; --accent-soft:#16372f; --warm:#f0c25a; --warm-soft:#3a2e12; --bad:#ef8080; --focus:#4fc7ad; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1513; --surface:#151e1b; --surface-2:#1b2622; --fg:#e4ede8; --muted:#97a89f; --line:#2a3631;
+  --accent:#4fc7ad; --accent-fg:#06221c; --accent-soft:#16372f; --warm:#f0c25a; --warm-soft:#3a2e12; --bad:#ef8080; --focus:#4fc7ad; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 var(--f-body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:var(--accent)}
+.wrap{max-width:640px;margin:0 auto;display:grid;gap:18px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:8px;font:700 18px/1 var(--f-display);letter-spacing:-.01em}
+.brand svg{width:24px;height:24px}
+.steps{display:flex;gap:6px;list-style:none;margin:0;padding:0;font-size:13px;color:var(--muted)}
+.steps li{display:flex;align-items:center;gap:6px}
+.steps li+li::before{content:"";width:18px;height:1px;background:var(--line)}
+.steps b{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--surface-2);border:1px solid var(--line);font-size:11px;font-weight:600}
+.steps li.on{color:var(--fg);font-weight:600}
+.steps li.on b{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}
+.steps li.done b{background:var(--accent-soft);border-color:var(--accent-soft);color:var(--accent)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:clamp(20px,5vw,36px);display:grid;gap:20px;min-width:0}
+h1{font:700 clamp(30px,6vw,40px)/1.08 var(--f-display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h2{font:700 clamp(24px,4.5vw,30px)/1.15 var(--f-display);letter-spacing:-.015em;margin:0;text-wrap:balance}
+.lead{font-size:17px;margin:0;max-width:56ch}
+.sub{color:var(--muted);margin:4px 0 0}
+.promise{display:grid;gap:10px;margin:0;padding:16px 18px;border-radius:12px;background:var(--accent-soft);list-style:none}
+.promise li{display:flex;gap:10px;align-items:flex-start}
+.promise svg{flex:none;width:18px;height:18px;margin-top:3px;color:var(--accent)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.meta{color:var(--muted);font-size:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--line);background:var(--surface);padding:11px 20px;border-radius:999px;cursor:pointer;font-weight:600}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}
+.btn.primary:hover{filter:brightness(1.06)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.link{border:0;background:none;padding:0;color:var(--accent);font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.actions{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px}
+/* drop zone */
+.drop{position:relative;display:grid;place-items:center;text-align:center;gap:8px;padding:34px 18px;border:2px dashed var(--line);border-radius:12px;background:var(--surface-2);cursor:pointer;transition:border-color .15s,background .15s}
+.drop:hover,.drop.over{border-color:var(--accent);background:var(--accent-soft)}
+.drop svg{width:40px;height:40px;color:var(--accent)}
+.drop strong{font-size:17px}
+.drop input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.filechip{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:10px;background:var(--accent-soft);min-width:0}
+.filechip span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.filechip small{color:var(--muted);margin-left:auto;white-space:nowrap}
+.status{font-size:14px;color:var(--muted)}
+.status.warn{color:var(--warm)}
+/* fields */
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 16px}
+.full{grid-column:1/-1}
+.f{display:grid;gap:6px;min-width:0}
+.f>label,.f>.lab{font-size:14px;font-weight:600}
+.f .hint{font-size:13px;color:var(--muted);font-weight:400}
+.f .opt{font-size:12px;color:var(--muted);font-weight:500;margin-left:6px}
+input[type=text],input[type=email],input[type=url],input[type=tel],textarea{width:100%;min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 13px}
+input:focus,textarea:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px var(--accent-soft)}
+input.filled{background:color-mix(in srgb,var(--accent-soft) 45%,var(--surface))}
+input.err{border-color:var(--bad)}
+.errmsg{color:var(--bad);font-size:13px}
+textarea{min-height:88px;resize:vertical;line-height:1.5}
+.picked{font-size:12px;color:var(--accent);font-weight:600}
+/* combo */
+.combo{position:relative}
+.cbox{display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-height:46px;padding:6px 40px 6px 8px;border:1px solid var(--line);border-radius:10px;background:var(--surface);cursor:text}
+.cbox:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.cbox input{flex:1 1 120px;min-width:80px;border:0;background:transparent;padding:5px 4px;outline:none}
+.chip{display:inline-flex;align-items:center;gap:4px;padding:3px 6px 3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:14px;font-weight:600;max-width:100%}
+.chip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chip button{border:0;background:none;color:inherit;cursor:pointer;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;padding:0}
+.chip button:hover{background:color-mix(in srgb,var(--accent) 18%,transparent)}
+.caret{position:absolute;right:6px;top:7px;width:32px;height:32px;border:0;background:none;border-radius:8px;cursor:pointer;color:var(--muted);display:grid;place-items:center}
+.caret:hover{background:var(--surface-2)}
+.menu{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:20;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:0 12px 30px rgba(10,30,24,.16);max-height:260px;overflow:auto;padding:4px;list-style:none;margin:0}
+.menu li{padding:9px 12px;border-radius:7px;cursor:pointer;display:flex;justify-content:space-between;gap:10px}
+.menu li.act,.menu li:hover{background:var(--surface-2)}
+.menu li.sel{color:var(--accent);font-weight:600}
+.menu li.sel::after{content:"✓"}
+.menu li.own{color:var(--muted)}
+.menu li.own b{color:var(--fg)}
+.consent{display:flex;gap:10px;align-items:flex-start;padding:14px 16px;border-radius:10px;background:var(--surface-2);font-size:14px}
+.consent input{margin-top:4px;width:18px;height:18px;accent-color:var(--accent);flex:none}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.about{margin:0;max-width:60ch;color:var(--muted)}
+.data{border:1px solid var(--line);border-radius:12px;padding:12px 16px;font-size:15px}
+.data summary{cursor:pointer;font-weight:600;color:var(--accent)}
+.data ul{margin:10px 0 2px;padding-left:20px;display:grid;gap:6px;color:var(--fg)}
+.done{text-align:left}
+.done .tick{width:56px;height:56px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center}
+.done .tick svg{width:28px;height:28px}
+.summary{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:0;font-size:14px}
+.summary dt{color:var(--muted)}
+.summary dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.foot{font-size:13px;color:var(--muted);text-align:center}
+.screen{display:grid;gap:20px;animation:in .28s ease both}
+@keyframes in{from{transform:translateY(6px)}to{transform:none}}
+@media (prefers-reduced-motion:reduce){.screen{animation:none}.drop{transition:none}}
+@media (max-width:560px){.grid{grid-template-columns:minmax(0,1fr)}.steps li span{display:none}.actions .btn{flex:1 1 auto}}
+</style>
+<style>html{color-scheme:light}body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="11" height="10" rx="5" fill="none" stroke="var(--accent)" stroke-width="2.4"/><rect x="11" y="7" width="11" height="10" rx="5" fill="none" stroke="var(--fg)" stroke-width="2.4"/></svg>Sourcechain</div>
+    <ol class="steps" id="steps" aria-label="Progress">
+      <li data-s="0"><b>1</b><span>Welcome</span></li>
+      <li data-s="1"><b>2</b><span>Resume</span></li>
+      <li data-s="2"><b>3</b><span>Preferences</span></li>
+    </ol>
+  </header>
+
+  <main class="card" id="card" aria-live="polite">
+
+    <!-- 1 · Welcome -->
+    <section class="screen" id="s0">
+      <div>
+        <h1>Hi, I'm Eve.</h1>
+        <p class="sub">Talent Acquisition Partner at Sourcechain</p>
+      </div>
+      <p class="about">Sourcechain is my small, boutique recruiting practice. I run every search myself, partnering with startups and tech companies to hire engineers, product people and leaders. You can find me on <a href="https://www.linkedin.com/in/eve8/" target="_blank" rel="noopener">LinkedIn</a> and <a href="https://github.com/eves8" target="_blank" rel="noopener">GitHub</a>.</p>
+      <p class="lead">Thanks for taking a moment. If you'd like me to contact you when I have an open role that matches what you're looking for, share a few details here.</p>
+      <ul class="promise">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Your details go only into my own internal applicant tracking system, which I've built myself. They are not shared with any third parties.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg><span>I'll only reach out about roles that fit your preferences.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg><span>You can ask me to delete them at any time.</span></li>
+      </ul>
+      <details class="data">
+        <summary>How your data is stored and protected</summary>
+        <ul>
+          <li>Your answers and resume are saved in my private Google Workspace account and in my own applicant tracking system. These providers host the data for me; they don't use it for anything else.</li>
+          <li>Data is encrypted when it's sent and when it's stored.</li>
+          <li>Only I have access. My accounts are protected with hardware security keys and two-step verification, and I keep my systems up to date.</li>
+          <li>I never sell or share your details. Email eve@sourcechain.io any time to see, update or delete them.</li>
+        </ul>
+      </details>
+      <div class="actions">
+        <span class="meta">Takes about 2 minutes</span>
+        <button class="btn primary" id="start" type="button">Let's start</button>
+      </div>
+    </section>
+
+    <!-- 2 · Resume + details -->
+    <section class="screen" id="s1" hidden>
+      <div>
+        <h2>Start with your resume</h2>
+        <p class="sub">Drop it in and I'll fill in the basics for you. You only need to check them.</p>
+      </div>
+      <label class="drop" id="drop" for="file">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M12 18v-6M9 15l3-3 3 3"/></svg>
+        <strong>Drop your resume here, or click to browse</strong>
+        <span class="meta">PDF or Word, up to 10 MB</span>
+        <input type="file" id="file" accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+      </label>
+      <div id="fileinfo" hidden></div>
+      <p class="status" id="status" hidden></p>
+      <p class="meta" id="noresume">No resume handy? <button class="link" type="button" id="skip">Fill in the details myself</button></p>
+
+      <div id="details" hidden>
+        <div class="grid">
+          <div class="f"><label for="name">Full name</label><input type="text" id="name" autocomplete="name"></div>
+          <div class="f"><label for="email">Email</label><input type="email" id="email" autocomplete="email"></div>
+          <div class="f full"><label for="li">LinkedIn profile <span class="opt">optional</span></label><input type="url" id="li" placeholder="linkedin.com/in/your-name"></div>
+          <div class="f"><label for="title">Current job title</label><input type="text" id="title" autocomplete="organization-title"></div>
+          <div class="f"><label for="company">Current company</label><input type="text" id="company" autocomplete="organization"></div>
+          <div class="f"><label for="city">City you're based in</label><input type="text" id="city" placeholder="e.g. Brooklyn, NY"></div>
+          <div class="f"><label for="yrs">Years of experience</label><input type="text" id="yrs" inputmode="numeric" placeholder="e.g. 7"></div>
+        </div>
+      </div>
+      <p class="errmsg" id="err1" hidden></p>
+      <div class="actions">
+        <button class="btn" type="button" data-back="0">Back</button>
+        <button class="btn primary" type="button" id="next1" disabled>Continue</button>
+      </div>
+    </section>
+
+    <!-- 3 · Preferences -->
+    <section class="screen" id="s2" hidden>
+      <div>
+        <h2>What would you like next?</h2>
+        <p class="sub">Pick from the list or type in your own words. Everything here helps me match you to the right role.</p>
+      </div>
+      <form id="prefs" novalidate>
+        <div class="grid">
+          <div class="f full"><div class="lab" id="l-roles">Roles you'd like to hear about</div><div class="combo" data-key="roles" data-multi="1" data-labelledby="l-roles" data-ph="e.g. Backend Engineer"></div></div>
+          <div class="f"><div class="lab" id="l-level">Level</div><div class="combo" data-key="level" data-labelledby="l-level" data-ph="Choose or type"></div></div>
+          <div class="f"><div class="lab" id="l-setup">Work setup</div><div class="combo" data-key="setup" data-multi="1" data-labelledby="l-setup" data-ph="Remote, hybrid…"></div></div>
+          <div class="f full"><div class="lab" id="l-where">Where would you like to work?</div><div class="combo" data-key="where" data-multi="1" data-labelledby="l-where" data-ph="e.g. New York"></div></div>
+          <div class="f"><div class="lab" id="l-reloc">Open to relocating?</div><div class="combo" data-key="relocate" data-labelledby="l-reloc" data-ph="Choose or type"></div></div>
+          <div class="f"><div class="lab" id="l-auth">Work authorization</div><div class="combo" data-key="auth" data-labelledby="l-auth" data-ph="Choose or type"></div></div>
+          <div class="f"><div class="lab" id="l-salary">Minimum base salary <span class="opt">USD</span></div><div class="combo" data-key="salary" data-labelledby="l-salary" data-ph="e.g. $180k"></div></div>
+          <div class="f"><div class="lab" id="l-active">How actively are you looking?</div><div class="combo" data-key="status" data-labelledby="l-active" data-ph="Choose or type"></div></div>
+          <div class="f"><div class="lab" id="l-start">When could you start?</div><div class="combo" data-key="start" data-labelledby="l-start" data-ph="Choose or type"></div></div>
+          <div class="f full"><label for="note">Anything else I should know? <span class="opt">optional</span></label><textarea id="note" placeholder="Your ideal next role, companies you'd love to work for, anything you'd rather avoid…"></textarea></div>
+          <div class="hp" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" tabindex="-1" autocomplete="off"></div>
+          <label class="consent full" for="consent"><input type="checkbox" id="consent"><span>I agree that Eve Miller (Sourcechain) may keep these details and my resume in her own applicant tracking system and contact me about matching roles. They won't be shared with third parties, and I can ask for them to be deleted at any time.</span></label>
+        </div>
+      </form>
+      <p class="errmsg" id="err2" hidden></p>
+      <div class="actions">
+        <button class="btn" type="button" data-back="1">Back</button>
+        <button class="btn primary" type="button" id="submit">Submit</button>
+      </div>
+    </section>
+
+    <!-- Done -->
+    <section class="screen done" id="s3" hidden>
+      <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg></div>
+      <div>
+        <h2 id="thanks">Thank you!</h2>
+        <p class="sub">Your details are saved. I'll get in touch when I have a role that matches what you told me. If anything changes, just reply to my email or write to me at eve@sourcechain.io.</p>
+      </div>
+      <dl class="summary" id="summary"></dl>
+      <div class="actions"><span class="meta">You can close this page.</span><button class="btn" type="button" id="again">Start over</button></div>
+    </section>
+  </main>
+  <p class="foot">Sourcechain LLC · Questions or deletion requests: eve@sourcechain.io</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+<script>
+'use strict';
+const $ = s => document.querySelector(s);
+const OPTS = {
+  roles: ['Backend Engineer','Full-stack Engineer','Frontend Engineer','Mobile Engineer (iOS / Android)','AI / ML Engineer','Data Engineer','Security / AppSec Engineer','DevOps / Platform / SRE','Engineering Manager','Product Manager','Product Designer','Sales / Business Development','Marketing','Operations'],
+  level: ['Mid-level','Senior','Staff / Principal','Lead / Manager','Director','VP or above'],
+  setup: ['Remote','Hybrid','On-site'],
+  where: ['New York','San Francisco Bay Area','Los Angeles','Remote (US)','London','Remote (Europe)','Anywhere'],
+  relocate: ['Yes','Maybe, for the right role','No'],
+  auth: ['US citizen or green card','US visa, would need a transfer','Would need visa sponsorship','UK right to work','EU right to work'],
+  salary: ['$100k','$125k','$150k','$175k','$200k','$225k','$250k','$300k+'],
+  status: ['Actively looking','Open to the right role','Just curious for now'],
+  start: ['Right away','In 2 weeks','In about a month','In 2–3 months','Later']
+};
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbwB0TA7B6wonEohaa28lAjbtJuZcP5nzF7X7bEiZvKocN42GTp8lbAaaK5SvdOqkA5I/exec';
+const state = {step:0, combos:{}, file:null};
+
+/* ---------- steps ---------- */
+function go(n){
+  state.step = n;
+  for (let i = 0; i < 4; i++) $('#s' + i).hidden = i !== n;
+  document.querySelectorAll('#steps li').forEach(li => { const s = +li.dataset.s; li.classList.toggle('on', s === n); li.classList.toggle('done', s < n); });
+  if (n > 0) $('#card').scrollIntoView({block:'start', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+}
+$('#start').onclick = () => go(1);
+document.querySelectorAll('[data-back]').forEach(b => b.onclick = () => go(+b.dataset.back));
+
+/* ---------- combo: pick from the list or type your own ---------- */
+function makeCombo(el){
+  const key = el.dataset.key, multi = !!el.dataset.multi, opts = OPTS[key] || [];
+  const id = 'c-' + key;
+  el.innerHTML = `<div class="cbox"><input type="text" id="${id}" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-controls="${id}-menu" aria-labelledby="${el.dataset.labelledby}" placeholder="${el.dataset.ph || ''}" autocomplete="off"></div><button type="button" class="caret" tabindex="-1" aria-label="Show options"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg></button><ul class="menu" id="${id}-menu" role="listbox" hidden></ul>`;
+  const box = el.querySelector('.cbox'), inp = el.querySelector('input'), menu = el.querySelector('.menu');
+  const c = {vals:[], key};
+  state.combos[key] = c;
+  let act = -1, items = [];
+  const has = v => c.vals.some(x => x.toLowerCase() === v.toLowerCase());
+  function renderChips(){
+    box.querySelectorAll('.chip').forEach(n => n.remove());
+    if (!multi) return;
+    c.vals.forEach((v, i) => {
+      const ch = document.createElement('span'); ch.className = 'chip';
+      ch.innerHTML = `<span></span><button type="button" aria-label="Remove">×</button>`;
+      ch.firstChild.textContent = v;
+      ch.querySelector('button').onclick = e => { e.stopPropagation(); c.vals.splice(i, 1); renderChips(); inp.focus(); };
+      box.insertBefore(ch, inp);
+    });
+    inp.placeholder = c.vals.length ? 'Add another' : (el.dataset.ph || '');
+  }
+  function add(v){
+    v = String(v).trim(); if (!v) return;
+    if (multi){ if (has(v)) c.vals = c.vals.filter(x => x.toLowerCase() !== v.toLowerCase()); else c.vals.push(v); inp.value = ''; renderChips(); }
+    else { c.vals = [v]; inp.value = v; close(); }
+    if (multi) open();
+  }
+  function open(){
+    const q = inp.value.trim().toLowerCase();
+    const list = opts.filter(o => !q || o.toLowerCase().includes(q) || (!multi && q === (c.vals[0] || '').toLowerCase()));
+    items = list.map(o => ({v:o, own:false}));
+    if (q && !opts.some(o => o.toLowerCase() === q) && !(!multi && q === (c.vals[0] || '').toLowerCase())) items.push({v:inp.value.trim(), own:true});
+    menu.innerHTML = '';
+    items.forEach((it, i) => {
+      const li = document.createElement('li'); li.setAttribute('role', 'option'); li.id = id + '-o' + i;
+      if (it.own){ li.className = 'own'; li.innerHTML = 'Use “<b></b>”'; li.querySelector('b').textContent = it.v; }
+      else { li.textContent = it.v; if (has(it.v)) li.classList.add('sel'); li.setAttribute('aria-selected', has(it.v)); }
+      li.onmousedown = e => { e.preventDefault(); add(it.v); };
+      menu.appendChild(li);
+    });
+    act = -1; menu.hidden = !items.length; inp.setAttribute('aria-expanded', String(!menu.hidden));
+  }
+  function close(){ menu.hidden = true; inp.setAttribute('aria-expanded', 'false'); inp.removeAttribute('aria-activedescendant'); }
+  function mark(){ [...menu.children].forEach((li, i) => li.classList.toggle('act', i === act)); if (act >= 0){ inp.setAttribute('aria-activedescendant', id + '-o' + act); menu.children[act].scrollIntoView({block:'nearest'}); } }
+  box.onclick = () => inp.focus();
+  inp.onfocus = open;
+  inp.oninput = () => { if (!multi) c.vals = inp.value.trim() ? [inp.value.trim()] : []; open(); };
+  inp.onblur = () => { if (multi && inp.value.trim()) add(inp.value); close(); };
+  inp.onkeydown = e => {
+    if (e.key === 'ArrowDown'){ e.preventDefault(); if (menu.hidden) open(); act = Math.min(act + 1, items.length - 1); mark(); }
+    else if (e.key === 'ArrowUp'){ e.preventDefault(); act = Math.max(act - 1, 0); mark(); }
+    else if (e.key === 'Enter'){ e.preventDefault(); if (act >= 0 && items[act]) add(items[act].v); else if (inp.value.trim()) add(inp.value); }
+    else if (e.key === 'Escape'){ close(); }
+    else if (e.key === 'Backspace' && multi && !inp.value && c.vals.length){ c.vals.pop(); renderChips(); }
+  };
+  el.querySelector('.caret').onclick = () => { if (menu.hidden){ inp.focus(); open(); } else close(); };
+  c.set = vs => { c.vals = vs.slice(); if (multi) renderChips(); else inp.value = vs[0] || ''; };
+}
+document.querySelectorAll('.combo').forEach(makeCombo);
+
+/* ---------- resume reading (stays in the browser) ---------- */
+const drop = $('#drop'), fileIn = $('#file');
+['dragenter','dragover'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add('over'); }));
+['dragleave','drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.remove('over'); }));
+drop.addEventListener('drop', e => { const f = e.dataTransfer.files[0]; if (f) handleFile(f); });
+fileIn.onchange = () => { if (fileIn.files[0]) handleFile(fileIn.files[0]); };
+$('#skip').onclick = () => { showDetails(); $('#name').focus(); };
+
+function status(msg, warn){ const s = $('#status'); s.hidden = !msg; s.textContent = msg || ''; s.classList.toggle('warn', !!warn); }
+function showDetails(){ $('#details').hidden = false; $('#noresume').hidden = true; checkStep1(); }
+const fmtSize = b => b > 1e6 ? (b / 1e6).toFixed(1) + ' MB' : Math.max(1, Math.round(b / 1e3)) + ' KB';
+
+async function handleFile(f){
+  const ok = /\.(pdf|docx)$/i.test(f.name);
+  if (!ok){ status('Please use a PDF or Word (.docx) file.', true); return; }
+  if (f.size > 10e6){ status('That file is larger than 10 MB. Please use a smaller version.', true); return; }
+  state.file = f;
+  const fi = $('#fileinfo'); fi.hidden = false;
+  fi.innerHTML = `<div class="filechip"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg><span></span><small>${fmtSize(f.size)}</small></div>`;
+  fi.querySelector('span').textContent = f.name;
+  drop.hidden = true;
+  status('Reading your resume…');
+  let text = '';
+  try { text = await extractText(f); } catch (e) { text = ''; }
+  showDetails();
+  if (!text.trim()){ status('I couldn’t read the text in this file, so please fill in the details below.', true); return; }
+  const d = parseResume(text);
+  let n = 0;
+  for (const k of ['name','email','li','title','company','city','yrs']){
+    const el = $('#' + k);
+    if (d[k] && !el.value){ el.value = d[k]; el.classList.add('filled'); n++; }
+  }
+  status(n ? `I filled in ${n} field${n > 1 ? 's' : ''} from your resume. Please check them and fix anything that’s off.` : 'I couldn’t pick out the details automatically, so please fill them in below.', !n);
+  checkStep1();
+}
+async function extractText(f){
+  const buf = await f.arrayBuffer();
+  if (/\.docx$/i.test(f.name)){ const r = await window.mammoth.extractRawText({arrayBuffer: buf}); return r.value || ''; }
+  const pdf = await window.pdfjsLib.getDocument({data: new Uint8Array(buf)}).promise;
+  const out = [];
+  for (let p = 1; p <= Math.min(pdf.numPages, 4); p++){
+    const tc = await (await pdf.getPage(p)).getTextContent();
+    let line = '', lastY = null;
+    for (const it of tc.items){
+      const y = Math.round(it.transform[5]);
+      if (lastY !== null && Math.abs(y - lastY) > 2){ out.push(line); line = ''; }
+      line += (line && !line.endsWith(' ') && it.str && !it.str.startsWith(' ') ? ' ' : '') + it.str; lastY = y;
+      if (it.hasEOL){ out.push(line); line = ''; lastY = null; }
+    }
+    if (line) out.push(line);
+  }
+  return out.join('\n');
+}
+function parseResume(text){
+  const lines = text.split(/\n/).map(s => s.replace(/\s+/g, ' ').trim()).filter(Boolean);
+  const d = {};
+  const em = text.match(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/); if (em) d.email = em[0].toLowerCase();
+  const li = text.match(/(?:https?:\/\/)?(?:[a-z]{2,3}\.)?linkedin\.com\/in\/[A-Za-z0-9_%-]+/i); if (li) d.li = 'https://www.' + li[0].replace(/^https?:\/\//i, '').replace(/^[a-z]{2,3}\.linkedin/i, 'linkedin').replace(/^www\./i, '');
+  // name: an early line of 2-4 capitalised words with no digits or symbols
+  for (const l of lines.slice(0, 8)){
+    const t = l.replace(/[|•·,].*$/, '').trim();
+    if (/^[A-Za-zÀ-ÿ'’.-]+(?: [A-Za-zÀ-ÿ'’.-]+){1,3}$/.test(t) && !/resume|curriculum|vitae|profile|summary|engineer|manager|designer|developer/i.test(t)){
+      d.name = t.toLowerCase() === t || t.toUpperCase() === t ? t.toLowerCase().replace(/(^|[\s'-])\p{L}/gu, m => m.toUpperCase()) : t; break;
+    }
+  }
+  // city: "City, ST" or a well-known city near the top
+  const top = lines.slice(0, 12).join(' \n ');
+  const st = top.match(/\b([A-Z][a-zA-Z.]+(?: [A-Z][a-zA-Z.]+){0,2}), (A[KLRZ]|C[AOT]|D[CE]|FL|GA|HI|I[ADLN]|K[SY]|LA|M[ADEINOST]|N[CDEHJMVY]|O[HKR]|PA|RI|S[CD]|T[NX]|UT|V[AT]|W[AIVY])\b/);
+  const city = top.match(/\b(New York(?: City)?|Brooklyn|Manhattan|San Francisco|Los Angeles|Seattle|Boston|Austin|Chicago|Denver|Miami|London|Berlin|Toronto|Amsterdam|Dublin|Paris|Remote)\b/);
+  if (st) d.city = st[1] + ', ' + st[2]; else if (city) d.city = city[1];
+  // current role: the line with "Present"/"Current", plus its neighbours
+  const iPres = lines.findIndex(l => /\b(present|current|now)\b/i.test(l) && /(19|20)\d{2}|\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i.test(l));
+  if (iPres >= 0){
+    const cand = [lines[iPres], lines[iPres - 1], lines[iPres + 1], lines[iPres - 2]].filter(Boolean)
+      .map(l => l.replace(/\(?\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s*\d{4}.*$|\(?\b(?:19|20)\d{2}\b.*$/i, '').replace(/[,|–—-]\s*$/, '').trim())
+      .filter(l => l && l.length < 90 && !/@|experience|employment/i.test(l));
+    const roleRe = /engineer|developer|manager|designer|lead|director|head|architect|scientist|analyst|product|founder|cto|vp|principal|staff|consultant|specialist|recruiter|marketing|sales/i;
+    for (const l of cand){
+      const parts = l.split(/\s+(?:at|@)\s+|\s*[|·•,–—]\s*|\s+-\s+/).map(s => s.trim()).filter(Boolean);
+      if (parts.length >= 2){ const ti = parts.findIndex(p => roleRe.test(p)); if (ti >= 0){ d.title = parts[ti]; d.company = parts.find((p, i) => i !== ti && !roleRe.test(p)) || parts[ti === 0 ? 1 : 0]; break; } }
+    }
+    if (!d.title){ const t = cand.find(l => roleRe.test(l)); if (t) d.title = t; const co = cand.find(l => l !== t && !roleRe.test(l)); if (co && t) d.company = co; }
+  }
+  // years: earliest work start year to today (ignores education lines)
+  const nowY = new Date().getFullYear(); let first = null;
+  const eduIdx = lines.findIndex(l => /^education\b/i.test(l));
+  lines.forEach((l, i) => {
+    if (eduIdx >= 0 && i > eduIdx && i < eduIdx + 8) return;
+    const m = l.match(/\b((?:19|20)\d{2})\s*(?:[-–—]|to)\s*((?:19|20)\d{2}|present|current|now)\b/i);
+    if (m){ const y = +m[1]; if (y > 1975 && y <= nowY && (first === null || y < first)) first = y; }
+  });
+  if (first !== null){ const y = nowY - first; if (y > 0 && y < 50) d.yrs = String(y); }
+  return d;
+}
+
+/* ---------- validation + submit ---------- */
+const validEmail = v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+function checkStep1(){ const ok = !$('#details').hidden && $('#name').value.trim().length > 1 && validEmail($('#email').value.trim()); $('#next1').disabled = !ok; return ok; }
+['name','email'].forEach(k => $('#' + k).addEventListener('input', checkStep1));
+document.querySelectorAll('#details input').forEach(i => i.addEventListener('input', () => i.classList.remove('filled')));
+$('#next1').onclick = () => {
+  const e = $('#err1');
+  if (!checkStep1()){ e.hidden = false; e.textContent = 'Please add your name and a valid email address.'; return; }
+  e.hidden = true; go(2);
+};
+
+function collect(){
+  const v = k => $('#' + k).value.trim(), c = k => state.combos[k].vals.join(', ');
+  return {
+    name:v('name'), email:v('email').toLowerCase(), linkedin:v('li'), title:v('title'), company:v('company'), city:v('city'), years:v('yrs'),
+    roles:c('roles'), level:c('level'), setup:c('setup'), where:c('where'), relocate:c('relocate'), auth:c('auth'), salary:c('salary'), status:c('status'), start:c('start'),
+    note:v('note'), resume: state.file ? state.file.name : '', consent: $('#consent').checked, hp: v('website')
+  };
+}
+$('#prefs').addEventListener('submit', e => e.preventDefault());
+$('#submit').onclick = async () => {
+  const d = collect(), err = $('#err2'), miss = [];
+  if (!d.roles) miss.push('the roles you’d like to hear about');
+  if (!d.consent) miss.push('your agreement at the bottom');
+  if (miss.length){ err.hidden = false; err.textContent = 'Please add ' + miss.join(' and ') + '.'; return; }
+  err.hidden = true;
+  if (d.hp) { go(3); return; } // bots fill the hidden field; quietly accept
+  const btn = $('#submit'); btn.disabled = true; btn.textContent = 'Sending…';
+  try {
+    if (state.file){ const b64 = await new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(String(r.result).split(',')[1] || ''); r.onerror = rej; r.readAsDataURL(state.file); }); d.file = {name: state.file.name, data: b64}; }
+    const resp = await fetch(ENDPOINT, {method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'}, body: JSON.stringify(d)});
+    const j = await resp.json();
+    if (!j.ok) throw new Error(j.error || 'failed');
+  } catch (e) {
+    btn.disabled = false; btn.textContent = 'Submit';
+    err.hidden = false; err.textContent = 'Something went wrong while sending. Please try again, or email your resume to eve@sourcechain.io.';
+    return;
+  }
+  $('#thanks').textContent = 'Thank you, ' + (d.name.split(' ')[0] || 'and welcome') + '!';
+  const rows = [['Name', d.name], ['Email', d.email], ['Roles', d.roles], ['Level', d.level], ['Where', d.where], ['Setup', d.setup], ['Minimum base', d.salary], ['Looking', d.status]].filter(r => r[1]);
+  const dl = $('#summary'); dl.innerHTML = '';
+  rows.forEach(([k, val]) => { const dt = document.createElement('dt'); dt.textContent = k; const dd = document.createElement('dd'); dd.textContent = val; dl.append(dt, dd); });
+  go(3);
+};
+$('#again').onclick = () => location.reload();
+go(0);
+</script>
+</body>
+</html>
