@@ -258,6 +258,7 @@ const OPTS = {
   status: ['Actively looking','Open to the right role','Just curious for now'],
   start: ['Right away','In 2 weeks','In about a month','In 2–3 months','Later']
 };
+const T0 = Date.now(); // time-on-page check (bots submit instantly)
 const ENDPOINT = 'https://script.google.com/macros/s/AKfycbwB0TA7B6wonEohaa28lAjbtJuZcP5nzF7X7bEiZvKocN42GTp8lbAaaK5SvdOqkA5I/exec';
 const state = {step:0, combos:{}, file:null};
 
@@ -443,7 +444,7 @@ function collect(){
   return {
     name:v('name'), email:v('email').toLowerCase(), linkedin:v('li'), title:v('title'), company:v('company'), city:v('city'), years:v('yrs'),
     roles:c('roles'), level:c('level'), setup:c('setup'), where:c('where'), relocate:c('relocate'), auth:c('auth'), salary:c('salary'), status:c('status'), start:c('start'),
-    note:[v('avoid') && 'Not interested in: ' + v('avoid'), v('note')].filter(Boolean).join('\n\n'), avoid:v('avoid'), resume: state.file ? state.file.name : '', consent: $('#consent').checked, hp: v('website')
+    note:[v('avoid') && 'Not interested in: ' + v('avoid'), v('note')].filter(Boolean).join('\n\n'), avoid:v('avoid'), resume: state.file ? state.file.name : '', consent: $('#consent').checked, hp: v('website'), t: Date.now() - T0
   };
 }
 $('#prefs').addEventListener('submit', e => e.preventDefault());
