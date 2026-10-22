@@ -92,7 +92,7 @@ section{padding:120px 0}
 /* marquee */
 .marquee{margin-top:110px;border-top:1px solid var(--line-d);padding:30px 0 34px;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
 .marquee .cap{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6f8481;text-align:center;margin-bottom:18px}
-.track{display:flex;gap:56px;width:max-content;animation:scroll 40s linear infinite}
+.track{display:flex;gap:56px;width:max-content;animation:scroll 70s linear infinite}
 .track span{font-family:var(--serif);font-size:30px;color:#cfe0dd;white-space:nowrap;opacity:.85}
 .track span.sep{color:var(--teal);opacity:1}
 @keyframes scroll{to{transform:translateX(-50%)}}
@@ -114,7 +114,10 @@ section{padding:120px 0}
 .t-mint p{color:#3d4d4b}
 .t-teal{background:var(--teal);color:#fff;border-color:transparent}
 .t-teal p,.t-teal .k{color:#bfe3df}
-.s4{grid-column:span 4}.s5{grid-column:span 5}.s7{grid-column:span 7}
+.s4{grid-column:span 4}.s5{grid-column:span 5}.s7{grid-column:span 7}.s12{grid-column:span 12}
+.t-wide{display:grid;grid-template-columns:auto 1fr;gap:12px 40px;align-items:center}
+.t-wide .logos{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.t-wide .logos span{padding:8px 14px;border-radius:999px;background:var(--paper);border:1px solid var(--line);font-weight:600;font-size:15px}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:16px}
 .stat{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:22px 24px}
 .stat b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(26px,3vw,38px);line-height:1.05;white-space:nowrap}
@@ -193,6 +196,7 @@ footer a:hover{color:var(--mint)}
   .hero-grid{grid-template-columns:1fr}
   .console{max-width:560px}
   .s4,.s5,.s7{grid-column:span 12}
+  .t-wide{grid-template-columns:1fr}
   .how-grid,.ways,.reach{grid-template-columns:1fr}
   .stats{grid-template-columns:repeat(2,1fr)}
   .links a:not(.pillbtn){display:none}
@@ -258,8 +262,8 @@ footer a:hover{color:var(--mint)}
   <div class="marquee">
     <div class="cap">Teams I've hired for</div>
     <div class="track" aria-hidden="true">
-      <span>BitGo</span><span class="sep">✦</span><span>Ava Labs</span><span class="sep">✦</span><span>Circle</span><span class="sep">✦</span><span>OpenBlock Labs</span><span class="sep">✦</span><span>CertiK</span><span class="sep">✦</span><span>bloXroute Labs</span><span class="sep">✦</span><span>Axelar</span><span class="sep">✦</span><span>Hashflow</span><span class="sep">✦</span><span>Ankr</span><span class="sep">✦</span><span>Intertrust</span><span class="sep">✦</span>
-      <span>BitGo</span><span class="sep">✦</span><span>Ava Labs</span><span class="sep">✦</span><span>Circle</span><span class="sep">✦</span><span>OpenBlock Labs</span><span class="sep">✦</span><span>CertiK</span><span class="sep">✦</span><span>bloXroute Labs</span><span class="sep">✦</span><span>Axelar</span><span class="sep">✦</span><span>Hashflow</span><span class="sep">✦</span><span>Ankr</span><span class="sep">✦</span><span>Intertrust</span><span class="sep">✦</span>
+      <span>LinkedIn</span><span class="sep">✦</span><span>BitGo</span><span class="sep">✦</span><span>Microsoft</span><span class="sep">✦</span><span>Circle</span><span class="sep">✦</span><span>Intuit</span><span class="sep">✦</span><span>Ava Labs</span><span class="sep">✦</span><span>eBay</span><span class="sep">✦</span><span>CertiK</span><span class="sep">✦</span><span>Dropbox</span><span class="sep">✦</span><span>FICO</span><span class="sep">✦</span><span>OpenBlock Labs</span><span class="sep">✦</span><span>CVS</span><span class="sep">✦</span><span>bloXroute Labs</span><span class="sep">✦</span><span>Axelar</span><span class="sep">✦</span><span>Hashflow</span><span class="sep">✦</span><span>Ankr</span><span class="sep">✦</span><span>Intertrust</span><span class="sep">✦</span>
+      <span>LinkedIn</span><span class="sep">✦</span><span>BitGo</span><span class="sep">✦</span><span>Microsoft</span><span class="sep">✦</span><span>Circle</span><span class="sep">✦</span><span>Intuit</span><span class="sep">✦</span><span>Ava Labs</span><span class="sep">✦</span><span>eBay</span><span class="sep">✦</span><span>CertiK</span><span class="sep">✦</span><span>Dropbox</span><span class="sep">✦</span><span>FICO</span><span class="sep">✦</span><span>OpenBlock Labs</span><span class="sep">✦</span><span>CVS</span><span class="sep">✦</span><span>bloXroute Labs</span><span class="sep">✦</span><span>Axelar</span><span class="sep">✦</span><span>Hashflow</span><span class="sep">✦</span><span>Ankr</span><span class="sep">✦</span><span>Intertrust</span><span class="sep">✦</span>
     </div>
   </div>
 </header>
@@ -267,13 +271,14 @@ footer a:hover{color:var(--mint)}
 <section id="results">
   <div class="wrap">
     <div class="eyebrow rv">Track record</div>
-    <h2 class="display rv">Teams that grew fast, and the hiring behind them.</h2>
+    <h2 class="display rv">From startups scaling fast to enterprise teams.</h2>
     <div class="bento">
       <div class="tile t-dark s7 rv"><div class="k">BitGo · one year</div><div class="big">30 → 120</div><h3>Sole recruiting lead</h3><p>Built the recruiting and HR function along the way. BitGo is now publicly listed.</p></div>
       <div class="tile t-mint s5 rv"><div class="k">OpenBlock Labs</div><div class="big">5 → 45</div><h3>Engineering and research</h3><p>Partnered with the co-founders on engineering and research hiring.</p></div>
       <div class="tile s4 rv"><div class="k">Ava Labs · 9 months</div><div class="mid">35+</div><h3>Through mainnet launch</h3><p>With a contract recruiting team I built and led.</p></div>
       <div class="tile t-teal s4 rv"><div class="k">Intertrust</div><div class="mid">90 → 200</div><h3>Company-wide growth</h3><p>Engineering, security, cryptography, sales, finance and product, including VP-level searches.</p></div>
       <div class="tile s4 rv"><div class="k">bloXroute Labs · 9 months</div><div class="mid">15+</div><h3>Backend to VP Finance</h3><p>From backend and SRE to finance and sales leadership.</p></div>
+      <div class="tile s12 t-wide rv"><div><div class="k">FocusKPI · enterprise clients</div><div class="mid">40+</div></div><div><h3>Data scientists and engineers placed at enterprise clients</h3><p>Generating $1M in billed revenue, with hires at:</p><div class="logos"><span>LinkedIn</span><span>Microsoft</span><span>Intuit</span><span>eBay</span><span>Dropbox</span><span>FICO</span><span>CVS</span></div></div></div>
     </div>
     <div class="stats rv">
       <div class="stat"><b>10+</b><span>Years recruiting</span></div>
@@ -330,7 +335,7 @@ footer a:hover{color:var(--mint)}
         <div class="eyebrow">Who I hire</div>
         <div class="fn"><span>Engineering</span><span>Data &amp; ML</span><span>Security</span><span>Product</span><span>Go-to-market</span><span>Executive</span></div>
       </div>
-      <p class="rv">Most of my work has been in AI, fintech, blockchain and security, and the same approach carries across tech, from SaaS and developer tools to consumer apps and marketplaces.</p>
+      <p class="rv">From seed-stage startups to enterprises like LinkedIn, Microsoft and Intuit. Most of my work has been in AI, fintech, blockchain and security, and the same approach carries across tech, from SaaS and developer tools to consumer apps and marketplaces.</p>
     </div>
   </div>
 </section>
