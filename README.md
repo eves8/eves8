@@ -93,14 +93,6 @@ Raised in Slovakia, I spent ten years in Germany and Austria, then built my recr
 
 <sub>Updated October 2026</sub>
 
-#### Senior Software Engineer, Backend / Full-Stack · AI mortgage-tech startup
-📍 New York, in office (WFH Wednesdays) &nbsp;·&nbsp; 💰 $150K–$200K + equity + bonus &nbsp;·&nbsp; Visa sponsorship possible
-
-Build AI agents that take a borrower from application to underwriting decision, at a Series A startup led by founders who've done it before.
-- 3+ years of backend or full-stack engineering
-- Go on the backend, React or React Native on the front end
-- CS, EE, Math or a related degree; mortgage, lending or fintech experience is a plus
-
 #### Senior DevSecOps Engineer · Global investment firm
 📍 New York (preferred), Irvine or Charlotte, hybrid 3 days &nbsp;·&nbsp; 💰 NY base $169K–$270K + up to 25% bonus &nbsp;·&nbsp; US work authorization required
 
@@ -109,6 +101,14 @@ Own and scale the in-house DevSecOps platform that secures how every development
 - Expert, hands-on Python and AWS
 - Deep CI/CD, Kubernetes and Terraform, with real end-to-end ownership
 
+#### Senior AI AppSec Engineer · Global investment firm
+📍 New York, Southern California or Charlotte, hybrid 3 days &nbsp;·&nbsp; 💰 NY base $190K–$304K + bonus &nbsp;·&nbsp; US work authorization required
+
+Be the first dedicated AI AppSec hire, securing the custom and third-party AI used across the firm.
+- 8+ years in information security, with deep application security experience
+- LLM and AI agent security: OWASP Top 10 for LLMs, MITRE ATLAS, NIST AI RMF
+- SAST/SCA/DAST automation in CI/CD, threat modeling, and coding in Python, Java or .NET
+
 #### Mobile Engineering Team Lead · Consumer marketplace
 📍 New York, hybrid (2 days on-site) &nbsp;·&nbsp; 💰 $180K–$210K &nbsp;·&nbsp; US work authorization required
 
@@ -116,6 +116,14 @@ Own an iOS-first consumer app and lead a small, senior team.
 - 10+ years building software, including leading a team (formally or informally)
 - Deep native iOS (Swift, SwiftUI), plus solid Android (Kotlin, Jetpack)
 - High-traffic consumer products; e-commerce, payments or live events a plus
+
+#### Senior Product Manager · Live-events consumer app
+📍 New York, hybrid &nbsp;·&nbsp; 💰 $185K–$220K base &nbsp;·&nbsp; US work authorization required
+
+Own the outcomes of a consumer app and website that connect millions of people with live events. Senior IC seat.
+- 6+ years in product, including 2–3 years owning consumer products end to end at startups or growth companies
+- A builder: a product you launched, a company you founded or a side project you shipped
+- Uses AI tools daily and knows experimentation and A/B testing well; live events, marketplace or premium consumer a plus
 
 **Sound like you, or someone you know?** Message me on LinkedIn. Every conversation stays confidential, and every referral is handled with care.
 
