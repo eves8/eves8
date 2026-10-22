@@ -1,60 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SourceChain | Eve Miller</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #222; max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; background: #fff; }
-        h1 { font-size: 2.6rem; letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 0.5rem; color: #000; }
-        .tagline { font-size: 1.2rem; color: #666; margin-bottom: 3rem; }
-        .section { margin-bottom: 3rem; }
-        h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 1.5px; color: #999; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-bottom: 1.5rem; }
-        ul { list-style: none; padding: 0; }
-        li { margin-bottom: 1.2rem; padding-left: 1.8rem; position: relative; }
-        li::before { content: "→"; position: absolute; left: 0; color: #000; font-weight: bold; }
-        .track-record li { margin-bottom: 1.5rem; }
-        .company-name { font-weight: bold; font-size: 1.1rem; display: block; color: #000; }
-        .cta-box { background: #fcfcfc; padding: 2.5rem; border-radius: 12px; border: 1px solid #efefef; text-align: center; margin-top: 4rem; }
-        .btn { display: inline-block; background: #000; color: #fff; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; transition: opacity 0.2s; }
-        .btn:hover { opacity: 0.8; }
-        strong { color: #000; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sourcechain | Eve Miller, AI-powered hiring partner</title>
+<meta name="description" content="Senior recruiting backed by AI agents, for startups whose growth now depends on hiring. 10+ years, 500+ hires, US and EU working hours.">
+<meta property="og:title" content="Sourcechain | Eve Miller, AI-powered hiring partner">
+<meta property="og:description" content="Senior recruiting backed by AI agents I built, for startups whose growth now depends on hiring.">
+<meta property="og:url" content="https://sourcechain.io/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0a1312">
+<link rel="canonical" href="https://sourcechain.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a1312'/%3E%3Ccircle cx='32' cy='32' r='14' fill='none' stroke='%237fe0d4' stroke-width='6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=IBM+Plex+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0a1312; --line-d:rgba(255,255,255,.09);
+  --ink:#0f1a19; --muted:#5a6866; --line:#e1e7e5; --paper:#f5f7f6; --white:#fff;
+  --teal:#0d6662; --mint:#7fe0d4; --mint-soft:#c9f1eb;
+  --serif:"Gloock",Georgia,serif; --sans:"Schibsted Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --r:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:1px;background:currentColor}
+.display{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1.02}
+h2.display{font-size:clamp(38px,5.6vw,72px);margin:16px 0 0;max-width:900px}
+section{padding:120px 0}
+
+/* nav */
+#nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:50;width:min(1144px,calc(100% - 32px));display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 10px 10px 20px;border-radius:999px;background:rgba(14,26,25,.62);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border:1px solid rgba(255,255,255,.1);color:#fff;transition:background .3s,color .3s}
+#nav.light{background:rgba(255,255,255,.8);color:var(--ink);border-color:rgba(15,26,25,.08);box-shadow:0 10px 30px rgba(15,26,25,.08)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--mono);font-size:13px;letter-spacing:.16em}
+.brand .dot{width:18px;height:18px;border-radius:50%;border:4px solid var(--mint)}
+#nav.light .brand .dot{border-color:var(--teal)}
+.links{display:flex;align-items:center;gap:6px}
+.links a{text-decoration:none;font-size:14px;padding:8px 14px;border-radius:999px;opacity:.85;transition:opacity .2s,background .2s}
+.links a:hover{opacity:1;background:rgba(127,224,212,.14)}
+.pillbtn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;font-size:15px;padding:13px 22px;border-radius:999px;background:var(--mint);color:var(--night) !important;opacity:1 !important;transition:transform .2s,box-shadow .2s}
+.pillbtn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(127,224,212,.35)}
+.pillbtn .arr{transition:transform .2s}
+.pillbtn:hover .arr{transform:translateX(3px)}
+.links .pillbtn{padding:10px 18px;font-size:14px}
+#nav.light .links .pillbtn{background:var(--ink);color:#fff !important}
+.ghostbtn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;font-size:15px;padding:13px 22px;border-radius:999px;border:1px solid rgba(255,255,255,.22);color:#fff;transition:background .2s}
+.ghostbtn:hover{background:rgba(255,255,255,.08)}
+
+/* hero */
+.hero{position:relative;background:var(--night);color:#fff;padding:180px 0 0;overflow:hidden;isolation:isolate}
+.aurora{position:absolute;inset:-20% -10% auto -10%;height:120%;z-index:-1;filter:blur(70px);opacity:.75}
+.aurora span{position:absolute;border-radius:50%;mix-blend-mode:screen;animation:drift 18s ease-in-out infinite alternate}
+.aurora span:nth-child(1){width:720px;height:520px;left:52%;top:-6%;background:radial-gradient(circle,#0f8a83 0%,transparent 65%)}
+.aurora span:nth-child(2){width:560px;height:460px;left:72%;top:22%;background:radial-gradient(circle,#7fe0d4 0%,transparent 62%);opacity:.55;animation-duration:22s}
+.aurora span:nth-child(3){width:620px;height:520px;left:-8%;top:40%;background:radial-gradient(circle,#0d6662 0%,transparent 65%);animation-duration:26s}
+@keyframes drift{0%{transform:translate(0,0) scale(1)}100%{transform:translate(-60px,40px) scale(1.12)}}
+.grid-bg{position:absolute;inset:0;z-index:-1;background-image:linear-gradient(var(--line-d) 1px,transparent 1px),linear-gradient(90deg,var(--line-d) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,#000 30%,transparent 80%);-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 30%,#000 30%,transparent 80%)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .9fr;gap:56px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:8px 14px 8px 10px;border:1px solid rgba(255,255,255,.14);border-radius:999px;background:rgba(255,255,255,.04)}
+.badge i{width:8px;height:8px;border-radius:50%;background:var(--mint);animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(127,224,212,.55)}70%{box-shadow:0 0 0 10px rgba(127,224,212,0)}100%{box-shadow:0 0 0 0 rgba(127,224,212,0)}}
+.hero h1{font-size:clamp(64px,10.5vw,148px);margin:26px 0 26px}
+.grad{background:linear-gradient(100deg,#fff 10%,var(--mint) 55%,#3fb3a9 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{font-size:clamp(20px,2.3vw,26px);line-height:1.35;font-weight:500;max-width:620px;color:#e8f2f0}
+.hero .lead b{color:var(--mint);font-weight:600}
+.hero .body{margin-top:18px;color:#9fb3b0;max-width:600px;font-size:17px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:36px}
+
+/* console */
+.console{position:relative;border-radius:var(--r);background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:22px;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.c-head{display:flex;align-items:center;justify-content:space-between;font-family:var(--mono);font-size:12px;color:#9fb3b0;letter-spacing:.08em;padding-bottom:16px;border-bottom:1px solid var(--line-d);margin-bottom:8px}
+.c-head .live{display:inline-flex;align-items:center;gap:8px;color:var(--mint)}
+.c-head .live i{width:7px;height:7px;border-radius:50%;background:var(--mint);animation:pulse 2.2s infinite}
+.step{display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:center;padding:13px 4px;border-bottom:1px dashed var(--line-d);opacity:.35;transition:opacity .5s}
+.step:last-of-type{border-bottom:0}
+.step.on{opacity:1}
+.step .ic{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:rgba(127,224,212,.1);color:var(--mint);font-family:var(--mono);font-size:12px}
+.step b{display:block;font-size:15px;font-weight:600;color:#fff}
+.step small{display:block;color:#8ea4a1;font-size:13px;line-height:1.4}
+.step .st{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:#6f8481}
+.step.on .st{color:var(--mint)}
+.c-foot{margin-top:14px;padding:14px;border-radius:14px;background:rgba(127,224,212,.08);display:flex;align-items:center;gap:12px;font-size:14px;color:#cfe3e0}
+.c-foot .av{width:34px;height:34px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;background:var(--mint);color:var(--night);font-family:var(--serif);font-size:16px}
+
+/* marquee */
+.marquee{margin-top:110px;border-top:1px solid var(--line-d);padding:30px 0 34px;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.marquee .cap{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6f8481;text-align:center;margin-bottom:18px}
+.track{display:flex;gap:56px;width:max-content;animation:scroll 40s linear infinite}
+.track span{font-family:var(--serif);font-size:30px;color:#cfe0dd;white-space:nowrap;opacity:.85}
+.track span.sep{color:var(--teal);opacity:1}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:56px}
+.tile{position:relative;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:30px;overflow:hidden;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.tile:hover{transform:translateY(-4px);box-shadow:0 24px 50px rgba(15,26,25,.08)}
+.tile .k{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.tile .big{font-family:var(--serif);font-size:clamp(54px,6.4vw,92px);line-height:.95;letter-spacing:-.03em;margin:18px 0 14px}
+.tile .mid{font-family:var(--serif);font-size:clamp(40px,4.4vw,60px);line-height:1;letter-spacing:-.02em;margin:14px 0 12px}
+.tile h3{position:relative;font-size:19px;font-weight:700;margin-bottom:6px}
+.tile p{position:relative;color:var(--muted);font-size:16px}
+.t-dark{background:var(--night);color:#fff;border-color:transparent}
+.t-dark p,.t-dark .k{color:#94aaa7}
+.t-dark .big{color:var(--mint)}
+.t-dark::after{content:"";position:absolute;width:420px;height:420px;right:-140px;bottom:-200px;background:radial-gradient(circle,rgba(15,138,131,.55),transparent 65%);pointer-events:none}
+.t-mint{background:var(--mint-soft);border-color:transparent}
+.t-mint p{color:#3d4d4b}
+.t-teal{background:var(--teal);color:#fff;border-color:transparent}
+.t-teal p,.t-teal .k{color:#bfe3df}
+.s4{grid-column:span 4}.s5{grid-column:span 5}.s7{grid-column:span 7}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:16px}
+.stat{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:22px 24px}
+.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(26px,3vw,38px);line-height:1.05;white-space:nowrap}
+.stat span{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* how */
+.how{background:var(--white)}
+.how-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px}
+.panel{border-radius:28px;padding:44px;position:relative;overflow:hidden}
+.panel.agents{background:var(--night);color:#fff}
+.panel.agents::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(127,224,212,.18) 1px,transparent 1px);background-size:22px 22px;mask-image:linear-gradient(180deg,#000,transparent 70%);-webkit-mask-image:linear-gradient(180deg,#000,transparent 70%)}
+.panel.me{background:var(--paper);border:1px solid var(--line)}
+.panel .tag{position:relative;display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+.agents .tag{background:rgba(127,224,212,.12);color:var(--mint)}
+.me .tag{background:var(--ink);color:#fff}
+.panel h3{position:relative;font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.2vw,42px);line-height:1.05;margin:20px 0 28px}
+.rows{position:relative;list-style:none;counter-reset:n}
+.rows li{display:grid;grid-template-columns:44px 1fr;gap:6px;padding:16px 0;border-top:1px solid var(--line)}
+.agents .rows li{border-top-color:var(--line-d)}
+.rows li::before{counter-increment:n;content:counter(n,decimal-leading-zero);font-family:var(--mono);font-size:12px;color:var(--teal);padding-top:4px}
+.agents .rows li::before{color:var(--mint)}
+.rows b{display:block;font-size:17px}
+.rows span{color:var(--muted);font-size:15.5px}
+.agents .rows span{color:#94aaa7}
+.outcome{margin-top:24px;padding:20px 22px;border-radius:18px;background:var(--mint-soft);font-weight:600;font-size:17px;line-height:1.45}
+
+/* ways */
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
+.way{position:relative;overflow:hidden;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:34px 30px 30px;display:flex;flex-direction:column;min-height:300px;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.way:hover{transform:translateY(-4px);box-shadow:0 24px 50px rgba(15,26,25,.08)}
+.way .n{font-family:var(--serif);font-size:56px;line-height:1;color:var(--line);margin-bottom:auto}
+.way h3{position:relative;font-size:22px;font-weight:700;margin:28px 0 8px}
+.way p{position:relative;color:var(--muted);font-size:16px}
+.way.feat{background:linear-gradient(160deg,#0f2523 0%,var(--night) 70%);color:#fff;border-color:transparent}
+.way.feat .n{color:rgba(127,224,212,.35)}
+.way.feat p{color:#a3b8b5}
+.way.feat::after{content:"";position:absolute;width:300px;height:300px;right:-100px;top:-120px;background:radial-gradient(circle,rgba(127,224,212,.35),transparent 65%)}
+.new{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.12em;background:var(--mint);color:var(--night);padding:3px 8px;border-radius:999px;vertical-align:middle;margin-left:8px}
+.terms{margin-top:22px;font-size:15px;color:var(--muted)}
+
+/* reach */
+.reach{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:end;margin-top:80px}
+.fn{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.fn span{padding:11px 18px;border-radius:999px;background:var(--white);border:1px solid var(--line);font-weight:600;font-size:15px}
+.reach p{color:var(--muted);font-size:18px}
+
+/* candidates */
+.cand{padding:0 0 120px}
+.cand-box{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:44px 48px;border-radius:28px;background:var(--mint-soft);position:relative;overflow:hidden}
+.cand-box::after{content:"";position:absolute;width:380px;height:380px;right:-120px;top:-160px;border-radius:50%;border:60px solid rgba(13,102,98,.08)}
+.cand-box h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.4vw,40px);line-height:1.05;margin:12px 0 10px}
+.cand-box p{color:#3d4d4b;max-width:600px}
+.darkbtn{position:relative;z-index:1;display:inline-flex;align-items:center;gap:10px;flex-shrink:0;text-decoration:none;font-weight:600;font-size:15px;padding:14px 24px;border-radius:999px;background:var(--ink);color:#fff;transition:transform .2s}
+.darkbtn:hover{transform:translateY(-2px)}
+
+/* final */
+.final{background:var(--night);color:#fff;position:relative;overflow:hidden;padding:140px 0 0;isolation:isolate}
+.final .aurora{inset:auto -10% -50% -10%;opacity:.6}
+.final h2{font-family:var(--serif);font-weight:400;font-size:clamp(46px,8vw,116px);line-height:.98;letter-spacing:-.03em;margin-top:20px}
+.final .sub{margin-top:24px;color:#9fb3b0;font-size:19px;max-width:560px}
+.mail{display:inline-flex;align-items:center;gap:16px;margin-top:44px;text-decoration:none;font-family:var(--serif);font-size:clamp(26px,3.6vw,44px);color:#fff;border-bottom:1px solid rgba(127,224,212,.5);padding-bottom:6px;transition:color .2s,border-color .2s;word-break:break-all}
+.mail:hover{color:var(--mint);border-color:var(--mint)}
+.mail .arr{font-family:var(--sans);font-size:.6em;transition:transform .2s}
+.mail:hover .arr{transform:translate(4px,-4px)}
+footer{margin-top:120px;border-top:1px solid var(--line-d);padding:28px 0 36px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:14px;color:#6f8481}
+footer .fl{display:flex;gap:22px}
+footer a{text-decoration:none;color:#a3b8b5}
+footer a:hover{color:var(--mint)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}.rv{opacity:1;transform:none}}
+
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .console{max-width:560px}
+  .s4,.s5,.s7{grid-column:span 12}
+  .how-grid,.ways,.reach{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .links a:not(.pillbtn){display:none}
+}
+@media (max-width:640px){
+  .wrap{padding:0 18px}
+  section{padding:84px 0}
+  .hero{padding-top:130px}
+  .panel{padding:30px 24px}
+  .tile{padding:26px}
+  .cand-box{flex-direction:column;align-items:flex-start;padding:32px 26px}
+  .way{min-height:0}
+  .marquee{margin-top:72px}
+  .track span{font-size:24px}
+  .stat{padding:18px}
+  .stat b{font-size:24px}
+  .reach{margin-top:56px;gap:24px}
+  .badge{font-size:10px;letter-spacing:.06em}
+}
+</style>
 </head>
 <body>
-    <h1>Building technical moats for frontier startups by sourcing the 0.01%.</h1>
-    <p class="tagline"><strong>Eve Miller</strong> | Senior Technical Recruiter & Embedded Startup Partner</p>
 
-    <div class="section">
-        <h2>The Approach</h2>
-        <p>The rarest engineering talent isn't found through standard searches. I manage the <strong>laborious work</strong> of deep-sourcing and high-volume candidate outreach required to secure the world's most capable algorithmic thinkers and technical leaders.</p>
+<nav id="nav">
+  <a class="brand" href="#top"><span class="dot"></span>SOURCECHAIN</a>
+  <div class="links">
+    <a href="#results">Results</a>
+    <a href="#how">How it works</a>
+    <a href="#work">Work together</a>
+    <a href="#candidates">Candidates</a>
+    <a class="pillbtn" href="mailto:eve@sourcechain.io?subject=Hiring%20plans">Let's talk <span class="arr">→</span></a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="aurora"><span></span><span></span><span></span></div>
+  <div class="grid-bg"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="badge"><i></i>AI-powered hiring partner · Seed to Series B</div>
+        <h1 class="display"><span class="grad">Eve Miller</span></h1>
+        <p class="lead">Senior recruiting backed by <b>AI agents I built</b>, for startups whose growth now depends on hiring.</p>
+        <p class="body">After a raise, the plan runs through people, and every open seat pushes a milestone out. I join your team and run hiring end to end. My agents do the research and legwork across the whole market, so my time goes where judgment matters: calibrating with your hiring managers, assessing people and closing them.</p>
+        <div class="ctas">
+          <a class="pillbtn" href="mailto:eve@sourcechain.io?subject=Hiring%20plans">Map your hiring plan <span class="arr">→</span></a>
+          <a class="ghostbtn" href="https://www.linkedin.com/in/eve8" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="console" aria-label="How a search runs">
+        <div class="c-head"><span>A SEARCH, END TO END</span><span class="live"><i></i>RUNS DAILY</span></div>
+        <div class="step"><div class="ic">01</div><div><b>Map the market</b><small>Target companies, teams and past candidates</small></div><div class="st">AGENT</div></div>
+        <div class="step"><div class="ic">02</div><div><b>Verify every profile</b><small>Current role checked the same day</small></div><div class="st">AGENT</div></div>
+        <div class="step"><div class="ic">03</div><div><b>Personal outreach</b><small>Written from each person's real background</small></div><div class="st">AGENT</div></div>
+        <div class="step"><div class="ic">04</div><div><b>Catch every reply</b><small>Email and LinkedIn, logged automatically</small></div><div class="st">AGENT</div></div>
+        <div class="step"><div class="ic">05</div><div><b>Screen, shortlist, close</b><small>Calibrated with your hiring manager</small></div><div class="st">EVE</div></div>
+        <div class="c-foot"><span class="av">E</span>You get a short list of people who fit and are ready to move.</div>
+      </div>
     </div>
+  </div>
 
-    <div class="section">
-        <h2>Expertise</h2>
-        <ul>
-            <li><strong>Scaling Specialist:</strong> 10+ years of experience and 500+ hires across AI, Web3, Fintech, and Cybersecurity.</li>
-            <li><strong>The Elite Pipeline:</strong> Proven access to world-class talent, from IOI/IMO/ICPC medalists and Ivy League researchers to senior engineers at Tier-1 Silicon Valley firms.</li>
-            <li><strong>Embedded Partner:</strong> I function as your in-house talent lead, building your ATS infrastructure, hiring culture, and team from the ground up.</li>
+  <div class="marquee">
+    <div class="cap">Teams I've hired for</div>
+    <div class="track" aria-hidden="true">
+      <span>BitGo</span><span class="sep">✦</span><span>Ava Labs</span><span class="sep">✦</span><span>Circle</span><span class="sep">✦</span><span>OpenBlock Labs</span><span class="sep">✦</span><span>CertiK</span><span class="sep">✦</span><span>bloXroute Labs</span><span class="sep">✦</span><span>Axelar</span><span class="sep">✦</span><span>Hashflow</span><span class="sep">✦</span><span>Ankr</span><span class="sep">✦</span><span>Intertrust</span><span class="sep">✦</span>
+      <span>BitGo</span><span class="sep">✦</span><span>Ava Labs</span><span class="sep">✦</span><span>Circle</span><span class="sep">✦</span><span>OpenBlock Labs</span><span class="sep">✦</span><span>CertiK</span><span class="sep">✦</span><span>bloXroute Labs</span><span class="sep">✦</span><span>Axelar</span><span class="sep">✦</span><span>Hashflow</span><span class="sep">✦</span><span>Ankr</span><span class="sep">✦</span><span>Intertrust</span><span class="sep">✦</span>
+    </div>
+  </div>
+</header>
+
+<section id="results">
+  <div class="wrap">
+    <div class="eyebrow rv">Track record</div>
+    <h2 class="display rv">Teams that grew fast, and the hiring behind them.</h2>
+    <div class="bento">
+      <div class="tile t-dark s7 rv"><div class="k">BitGo · one year</div><div class="big">30 → 120</div><h3>Sole recruiting lead</h3><p>Built the recruiting and HR function along the way. BitGo is now publicly listed.</p></div>
+      <div class="tile t-mint s5 rv"><div class="k">OpenBlock Labs</div><div class="big">5 → 45</div><h3>Engineering and research</h3><p>Partnered with the co-founders on engineering and research hiring.</p></div>
+      <div class="tile s4 rv"><div class="k">Ava Labs · 9 months</div><div class="mid">35+</div><h3>Through mainnet launch</h3><p>With a contract recruiting team I built and led.</p></div>
+      <div class="tile t-teal s4 rv"><div class="k">Intertrust</div><div class="mid">90 → 200</div><h3>Company-wide growth</h3><p>Engineering, security, cryptography, sales, finance and product, including VP-level searches.</p></div>
+      <div class="tile s4 rv"><div class="k">bloXroute Labs · 9 months</div><div class="mid">15+</div><h3>Backend to VP Finance</h3><p>From backend and SRE to finance and sales leadership.</p></div>
+    </div>
+    <div class="stats rv">
+      <div class="stat"><b>10+</b><span>Years recruiting</span></div>
+      <div class="stat"><b>500+</b><span>Hires</span></div>
+      <div class="stat"><b>US &amp; EU</b><span>Working hours</span></div>
+      <div class="stat"><b>EN · DE · SK</b><span>Languages</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="how">
+  <div class="wrap">
+    <div class="eyebrow rv">How it works</div>
+    <h2 class="display rv">The agents cover the market. I spend my time with people.</h2>
+    <div class="how-grid">
+      <div class="panel agents rv">
+        <span class="tag">◆ What the agents do</span>
+        <h3>Every day, across the whole market.</h3>
+        <ul class="rows">
+          <li><div><b>Map the market</b><span>Target companies and teams researched, profiles matched to the brief, and past candidates resurfaced when they fit a new role.</span></div></li>
+          <li><div><b>Verify before outreach</b><span>Each person's current role is checked the same day, and contact details are verified. Nothing is guessed.</span></div></li>
+          <li><div><b>Reach out and follow up</b><span>Messages written from each person's real background, with follow-ups on schedule.</span></div></li>
+          <li><div><b>Catch every reply</b><span>Email and LinkedIn replies are picked up and logged, and the pipeline updates itself.</span></div></li>
+          <li><div><b>Watch for timing</b><span>Layoffs at target companies are flagged daily, so strong people hear from you early.</span></div></li>
         </ul>
-    </div>
-
-    <div class="section">
-        <h2>Proven Track Record</h2>
-        <ul class="track-record">
-            <li><span class="company-name">OB-1</span> Scaling a frontier AI coding agent by hunting world-class algorithmic experts and medalists.</li>
-            <li><span class="company-name">OpenBlock Labs</span> Scaled the research team for protocol incentive modeling and crypto-economics.</li>
-            <li><span class="company-name">Ava Labs</span> Hired top-tier engineering and GTM leads for the pre and post-launch phases of the Avalanche protocol.</li>
-            <li><span class="company-name">BitGo</span> First full-time recruiter; scaled the team from 30 to 120+ and built the internal hiring infrastructure.</li>
-            <li><span class="company-name">bloXroute</span> Scaled engineering and GTM teams post-Series B during a critical high-growth phase.</li>
-            <li><span class="company-name">Strategic Sourcing</span> Sourced specialized talent for industry leaders including <strong>Circle, Ankr, and CertiK.</strong></li>
-            <li><span class="company-name">FocusKPI</span> Placed 40+ experts for elite clients including LinkedIn, eBay, Microsoft, and Dropbox.</li>
+      </div>
+      <div class="panel me rv">
+        <span class="tag">● What I do</span>
+        <h3>Where judgment matters.</h3>
+        <ul class="rows">
+          <li><div><b>Intake calibration</b><span>With the hiring manager, on what the role really needs.</span></div></li>
+          <li><div><b>Screen</b><span>For motivation and readiness alongside fit.</span></div></li>
+          <li><div><b>Shortlist</b><span>A small number of strong candidates, each with a clear reason they fit.</span></div></li>
+          <li><div><b>Close</b><span>Through offer, acceptance and start date.</span></div></li>
         </ul>
+        <div class="outcome">Wider market coverage and a faster first shortlist, without paying for a bigger team.</div>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="cta-box">
-        <p style="margin-bottom: 1.5rem;">Struggling with a difficult technical or commercial search?</p>
-        <a href="mailto:eve@sourcechain.io" class="btn">Get in Touch</a>
+<section id="work">
+  <div class="wrap">
+    <div class="eyebrow rv">Ways to work together</div>
+    <h2 class="display rv">Shaped around the hires you need.</h2>
+    <div class="ways">
+      <div class="way rv"><div class="n">01</div><h3>Hiring partner</h3><p>Embedded on an hourly basis, intake through signed offer, in your ATS and Slack. The agent system comes with me.</p></div>
+      <div class="way rv"><div class="n">02</div><h3>Monthly + placement</h3><p>A flat monthly fee with a reduced placement fee per hire, for a defined hiring plan.</p></div>
+      <div class="way feat rv"><div class="n">03</div><h3>Hiring system for your team<span class="new">NEW</span></h3><p>I set up the same kind of system for your recruiting or HR team: a hiring system plus AI agents, starting with your biggest bottleneck. Your team stays in charge.</p></div>
     </div>
+    <p class="terms rv">Terms are shaped around the hires you need and invoiced monthly through a US entity.</p>
+    <div class="reach">
+      <div class="rv">
+        <div class="eyebrow">Who I hire</div>
+        <div class="fn"><span>Engineering</span><span>Data &amp; ML</span><span>Security</span><span>Product</span><span>Go-to-market</span><span>Executive</span></div>
+      </div>
+      <p class="rv">Most of my work has been in AI, fintech, blockchain and security, and the same approach carries across tech, from SaaS and developer tools to consumer apps and marketplaces.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cand" id="candidates">
+  <div class="wrap">
+    <div class="cand-box rv">
+      <div>
+        <div class="eyebrow">For engineers and operators</div>
+        <h3>Open to the right opportunity?</h3>
+        <p>Share your profile once, and I'll reach out when a role matches what you're looking for. It stays in my own applicant tracking system and is never shared with third parties.</p>
+      </div>
+      <a class="darkbtn" href="/join">Join the talent network →</a>
+    </div>
+  </div>
+</div>
+
+<section class="final" id="contact">
+  <div class="aurora"><span></span><span></span><span></span></div>
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--mint)">Let's talk</div>
+    <h2>Planning the next two quarters of hiring? <span class="grad">Let's map it together.</span></h2>
+    <p class="sub">I partner with a small number of companies at a time.</p>
+    <a class="mail" href="mailto:eve@sourcechain.io?subject=Hiring%20plans">eve@sourcechain.io <span class="arr">↗</span></a>
+    <footer>
+      <span>© 2026 Sourcechain LLC</span>
+      <span class="fl"><a href="https://www.linkedin.com/in/eve8" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/eves8" target="_blank" rel="noopener">GitHub</a><a href="/join">Talent network</a></span>
+    </footer>
+  </div>
+</section>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav'), hero=document.getElementById('top'), fin=document.getElementById('contact');
+  function onScroll(){
+    var y=window.scrollY, h=hero.offsetHeight-80, f=fin.getBoundingClientRect().top;
+    nav.classList.toggle('light', y>h && f>80);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+  } else { els.forEach(function(el){el.classList.add('in')}); }
+  var steps=document.querySelectorAll('.step'), i=0;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){steps.forEach(function(s){s.classList.add('on')});return;}
+  function tick(){
+    if(i>=steps.length){ setTimeout(function(){steps.forEach(function(s){s.classList.remove('on')});i=0;setTimeout(tick,500);},2600); return; }
+    steps[i].classList.add('on'); i++; setTimeout(tick,900);
+  }
+  setTimeout(tick,600);
+})();
+</script>
 </body>
 </html>
