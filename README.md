@@ -29,7 +29,7 @@ I also set up the same kind of system for recruiting and HR teams who want to hi
 | **Ava Labs** | **35+ hires in 9 months** through mainnet launch, with a contract recruiting team I built and led |
 | **OpenBlock Labs** | Grew the team **from 5 to 45**, partnering with the co-founders on engineering and research hiring |
 | **bloXroute Labs** | **15+ hires in 9 months**, from backend and SRE to VP Finance and sales leadership |
-| **FocusKPI** | **40+ data scientists and engineers** placed with enterprise clients, generating **$1M in billed revenue** |
+| **FocusKPI** | **40+ data scientists and engineers** placed with enterprise clients including LinkedIn, Microsoft, Intuit, eBay, Dropbox, FICO and CVS, generating **$1M in billed revenue** |
 
 ### 🤖 How my AI agents work
 
@@ -71,7 +71,7 @@ Every engagement is built around your hiring goal. We set the scope, structure a
 
 ### 🏢 Teams I've hired for
 
-**OpenBlock Labs** · **Ava Labs** · **BitGo** · **Circle** · **CertiK** · **bloXroute Labs** · **Axelar** · **Hashflow** · **Ankr** · **Intertrust**
+**LinkedIn** · **Microsoft** · **Intuit** · **eBay** · **Dropbox** · **FICO** · **CVS** · **BitGo** · **Circle** · **Ava Labs** · **OpenBlock Labs** · **CertiK** · **bloXroute Labs** · **Axelar** · **Hashflow** · **Ankr** · **Intertrust**
 
 Most of my work has been in AI, fintech, blockchain and security, and the same approach carries across tech, from SaaS and developer tools to consumer apps and marketplaces.
 
