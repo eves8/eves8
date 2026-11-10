@@ -1,6 +1,6 @@
 # Eve Miller
 
-**Embedded Talent Partner for VC-backed Startups**
+**Talent Partner for VC-backed Startups**
 [sourcechain.io](https://sourcechain.io) · [LinkedIn](https://linkedin.com/in/eve8) · eve@sourcechain.io
 
 I'm a technical recruiter with 500+ hires in AI, fintech and crypto, from engineering and research to go-to-market and executive roles. You work with me directly, not with an account manager. I source and reach out myself, backed by recruiting tools I built and run every day.
