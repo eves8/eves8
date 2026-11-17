@@ -317,6 +317,8 @@ footer a:hover{color:var(--mint)}
 .jobcta>div{flex:1 1 420px;max-width:760px}
 .jobcta b{color:#fff}
 .jobcta .pillbtn{flex-shrink:0}
+.mailrow{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:44px}.mailrow .mail{margin-top:0}
+.copybtn{font:inherit;font-weight:600;font-size:14px;padding:11px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;cursor:pointer}.copybtn:hover{background:rgba(255,255,255,.08)}
 
 #why{background:var(--paper);padding-top:0}
 .whys{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
@@ -340,7 +342,7 @@ footer a:hover{color:var(--mint)}
     <a href="#services">Services</a>
     <a href="#results">Track record</a>
     <a class="keep" href="#roles">Open roles</a>
-    <a class="pillbtn" href="mailto:eve@sourcechain.io?subject=Hiring%20plans">Let's talk <span class="arr">→</span></a>
+    <a class="pillbtn" href="#contact">Let's talk <span class="arr">→</span></a>
   </div>
 </nav>
 
@@ -355,8 +357,7 @@ footer a:hover{color:var(--mint)}
         <p class="lead">Boutique technical and leadership recruiting for venture-backed startups across the US and Europe.</p>
         <p class="proof">Teams scaled from seed to IPO · 500+ hires · US &amp; Europe</p>
         <div class="ctas">
-          <a class="pillbtn" href="mailto:eve@sourcechain.io?subject=Hiring%20plans">Start a search <span class="arr">→</span></a>
-          <a class="ghostbtn" href="#services">See services</a>
+          <a class="pillbtn" href="#services">See services <span class="arr">→</span></a>
         </div>
         <a class="cand-link" href="#roles">Looking for your next role? See open roles →</a>
       </div>
@@ -449,7 +450,7 @@ footer a:hover{color:var(--mint)}
       <div class="job rv"><div class="co">Global reinsurance broker</div><h3>VP, Data Platform Product Manager</h3><div class="tags"><span>London</span></div><div class="pay">Around £125K base + bonus</div><ul class="bul"><li>Own a large-scale data platform used by teams across the business</li><li>Ship AI and data products for internal experts and clients</li><li>Start-up style team inside a global firm</li></ul></div>
       <div class="job rv"><div class="co">Quantitative investment firm</div><h3>Cloud Computing Engineer</h3><div class="tags"><span>New York</span><span>Hybrid · 3+ days in office</span></div><div class="pay">$180K–$250K base + bonus</div><ul class="bul"><li>Scale the cloud computing platform behind the firm's research</li><li>GPU compute, job scheduling, containers and infrastructure as code</li><li>Small, flat team working directly with researchers</li></ul></div>
     </div>
-    <div class="jobcta rv"><div><b>Interested?</b> Email the role title and your LinkedIn or resume. We'll send the full job description.</div><a class="pillbtn" href="mailto:eve@sourcechain.io?subject=Full%20job%20description%20request">Request the full JD <span class="arr">→</span></a></div>
+    <div class="jobcta rv"><div><b>Interested?</b> Pick the role and share your resume. We'll send the full job description.</div><a class="pillbtn" href="/join?jd=1">Request the full JD <span class="arr">→</span></a></div>
 
     <div class="radar rv" id="candidates">
       <div>
@@ -459,13 +460,6 @@ footer a:hover{color:var(--mint)}
       <a class="darkbtn" href="/join">Join for future openings →</a>
     </div>
 
-    <div class="faqh rv">Common questions</div>
-    <div class="faq rv">
-      <details><summary>Who is the employer?</summary><p>We share it once we've talked. Every role here is real and open.</p></details>
-      <details><summary>What happens after I email?</summary><p>We send the full job description. If it's a fit, we set up a short call.</p></details>
-      <details><summary>Do you work with candidates outside these locations?</summary><p>Yes, if you're open to relocating. Just mention it.</p></details>
-      <details><summary>Is there a fee for candidates?</summary><p>Never. Our clients pay us. Questions? Write to <a href="mailto:eve@sourcechain.io">eve@sourcechain.io</a>.</p></details>
-    </div>
   </div>
 </section>
 
@@ -475,7 +469,7 @@ footer a:hover{color:var(--mint)}
     <div class="eyebrow" style="color:var(--mint)">Let's talk</div>
     <h2>Planning the next two quarters of hiring? <span class="grad">Let's map it together.</span></h2>
     <p class="sub">We partner with a small number of companies at a time.</p>
-    <a class="mail" href="mailto:eve@sourcechain.io?subject=Hiring%20plans">eve@sourcechain.io <span class="arr">↗</span></a>
+    <div class="mailrow"><a class="mail" href="mailto:eve@sourcechain.io?subject=Hiring%20plans">eve@sourcechain.io <span class="arr">↗</span></a><button class="copybtn" type="button" id="copyMail">Copy email</button></div>
     <footer>
       <span>© 2026 Sourcechain LLC</span>
       <span class="fl"><a href="https://www.linkedin.com/in/eve8" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/eves8" target="_blank" rel="noopener">GitHub</a><a href="#roles">Open roles</a><a href="/join">Talent radar</a></span>
@@ -484,6 +478,10 @@ footer a:hover{color:var(--mint)}
 </section>
 
 <script>
+(function(){
+  var cb=document.getElementById('copyMail');
+  if(cb){cb.addEventListener('click',function(){var ok=function(){cb.textContent='Copied';setTimeout(function(){cb.textContent='Copy email'},2000)};try{navigator.clipboard.writeText('eve@sourcechain.io').then(ok,function(){window.prompt('Email','eve@sourcechain.io')})}catch(e){window.prompt('Email','eve@sourcechain.io')}});}
+})();
 (function(){
   var nav=document.getElementById('nav'), hero=document.getElementById('top'), fin=document.getElementById('contact');
   function onScroll(){
