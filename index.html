@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sourcechain | Eve Miller, Talent Partner for VC-backed Startups</title>
-<meta name="description" content="Your dedicated recruiter scaling your team and revenue. Silicon Valley track record: 12 years, 500+ hires. Hiring across the US, Europe and beyond.">
-<meta property="og:title" content="Sourcechain | Eve Miller, Talent Partner for VC-backed Startups">
-<meta property="og:description" content="Your dedicated recruiter scaling your team and revenue. 12 years, 500+ hires.">
+<title>Sourcechain | Talent Acquisition Partner for VC-backed Startups</title>
+<meta name="description" content="A dedicated talent partner for your most critical hires. Boutique technical and leadership recruiting for venture-backed startups across the US and Europe.">
+<meta property="og:title" content="Sourcechain | Talent Acquisition Partner for VC-backed Startups">
+<meta property="og:description" content="A dedicated talent partner for your most critical hires.">
 <meta property="og:url" content="https://sourcechain.io/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
@@ -81,6 +81,7 @@ section{padding:120px 0}
 .step{display:grid;grid-template-columns:30px 1fr auto;gap:12px;align-items:center;padding:13px 4px;border-bottom:1px dashed var(--line-d);opacity:.35;transition:opacity .5s}
 .step:last-of-type{border-bottom:0}
 .step.on{opacity:1}
+.step{opacity:1}
 .step .ic{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:rgba(127,224,212,.1);color:var(--mint);font-family:var(--mono);font-size:12px}
 .step b{display:block;font-size:15px;font-weight:600;color:#fff}
 .step small{display:block;color:#8ea4a1;font-size:13px;line-height:1.4}
@@ -199,7 +200,7 @@ footer a:hover{color:var(--mint)}
   .t-wide{grid-template-columns:1fr}
   .how-grid,.ways,.reach{grid-template-columns:1fr}
   .stats{grid-template-columns:repeat(2,1fr)}
-  .links a:not(.pillbtn){display:none}
+  .links a:not(.pillbtn):not(.keep){display:none}
 }
 @media (max-width:640px){
   .wrap{padding:0 18px}
@@ -215,7 +216,84 @@ footer a:hover{color:var(--mint)}
   .stat b{font-size:24px}
   .reach{margin-top:56px;gap:24px}
   .badge{font-size:10px;letter-spacing:.06em}
+  .links a,.links .pillbtn{white-space:nowrap}
+  .links a.keep{padding:8px 8px;font-size:13px}
+  .links .pillbtn{padding:9px 14px;font-size:13px}
+  .brand{font-size:12px;letter-spacing:.1em}
 }
+
+/* human pass */
+.c-head{font-size:11px}
+.step small{font-size:13.5px}
+.hero .cand-link{display:inline-block;margin-top:22px;color:#9fb3b0;font-size:15px;text-decoration:none;border-bottom:1px solid rgba(127,224,212,.35);padding-bottom:2px}
+.hero .cand-link:hover{color:var(--mint)}
+.quote{position:relative;font-family:var(--serif);font-size:clamp(26px,2.8vw,36px);line-height:1.18;margin:26px 0 30px}
+.sig{position:relative;display:flex;align-items:center;gap:14px;color:#94aaa7;font-size:15px}
+.sig .av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--mint);color:var(--night);font-family:var(--serif);font-size:20px}
+.sig b{display:block;color:#fff;font-size:16px}
+.roles-sec{background:var(--white)}
+.roles-sub{margin-top:18px;color:var(--muted);font-size:18px;max-width:640px}
+.jobs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.job{display:flex;flex-direction:column;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:28px;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
+.job:hover{transform:translateY(-4px);box-shadow:0 24px 50px rgba(15,26,25,.08)}
+.job .co{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
+.job h3{font-size:22px;font-weight:700;line-height:1.2;margin:12px 0 14px}
+.job ul{list-style:none;color:var(--muted);font-size:15.5px;margin-bottom:24px}
+.job li{padding:3px 0}
+.job .pay{color:var(--ink);font-weight:600}
+.job .acts{margin-top:auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.job .darkbtn{padding:12px 20px;font-size:14.5px}
+.job .ask{font-size:14.5px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+.job .ask:hover{color:var(--teal)}
+.roles-sec + .cand{background:var(--white)}
+@media (max-width:980px){.jobs{grid-template-columns:1fr}}
+
+.hero h1{font-size:clamp(42px,5.4vw,74px);line-height:1.04}
+.hero .proof{margin-top:22px;font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#7f9794}
+.pain{display:grid;grid-template-columns:1fr;gap:4px;padding:14px 4px;border-bottom:1px dashed var(--line-d)}
+.pain:last-of-type{border-bottom:0}
+.pain b{font-size:15.5px;color:#fff;font-weight:600}
+.pain small{color:#8ea4a1;font-size:14px;line-height:1.45}
+.stories{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
+.stories .tile .big{font-size:clamp(48px,5vw,76px)}
+.fams{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
+.fam{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.fam h3{font-size:20px;font-weight:700;margin-bottom:12px}
+.fam p{color:var(--muted);font-size:15.5px;line-height:1.55}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
+.sv{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:32px 30px}
+.sv h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,2.6vw,34px);line-height:1.08;letter-spacing:-.01em}
+.sv .how{display:inline-block;background:none;margin:14px 0 14px;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
+.sv p{color:var(--muted);font-size:16px}
+.sv .best{margin-top:auto;padding-top:22px;border-top:1px solid var(--line);font-size:15px;color:var(--ink)}
+.sv .best span{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.sv.feat{background:linear-gradient(160deg,#0f2523 0%,var(--night) 70%);color:#fff;border-color:transparent}
+.sv.feat p{color:#a3b8b5}.sv.feat .how{color:var(--mint)}
+.sv.feat .best{border-top-color:var(--line-d);color:#e8f2f0}.sv.feat .best span{color:#7f9794}
+.forcand{background:#0f1f1d;color:#fff;position:relative;overflow:hidden;isolation:isolate}
+.forcand .grid-bg{opacity:.6}
+.forcand .eyebrow{color:var(--mint)}
+.forcand h2.display{color:#fff}
+.forcand .roles-sub{color:#9fb3b0}
+.forcand .job{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.1);color:#fff}
+.forcand .job .co{color:var(--mint)}
+.forcand .job ul{color:#9fb3b0}
+.forcand .job .pay{color:#fff}
+.forcand .job .darkbtn{background:var(--mint);color:var(--night)}
+.forcand .job .ask{color:#9fb3b0;border-color:rgba(255,255,255,.2)}
+.radar{margin-top:16px;display:flex;align-items:center;justify-content:space-between;gap:28px;padding:34px 38px;border-radius:var(--r);background:var(--mint-soft);color:var(--ink)}
+.radar h3{font-family:var(--serif);font-weight:400;font-size:clamp(26px,3vw,36px);line-height:1.08;margin-bottom:8px}
+.radar p{color:#3d4d4b;max-width:620px;font-size:16px}
+.radar .darkbtn{flex-shrink:0}
+.faq{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}
+.faq details{border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:16px 20px;background:rgba(255,255,255,.03)}
+.faq summary{cursor:pointer;font-weight:600;font-size:16px;list-style:none}
+.faq summary::after{content:"+";float:right;color:var(--mint)}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin-top:10px;color:#9fb3b0;font-size:15.5px}
+.faq a{color:var(--mint)}
+.faqh{margin-top:72px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7f9794}
+@media (max-width:980px){.stories,.fams,.svc,.faq{grid-template-columns:1fr}.radar{flex-direction:column;align-items:flex-start}}
 </style>
 </head>
 <body>
@@ -223,10 +301,10 @@ footer a:hover{color:var(--mint)}
 <nav id="nav">
   <a class="brand" href="#top"><span class="dot"></span>SOURCECHAIN</a>
   <div class="links">
-    <a href="#results">Results</a>
-    <a href="#how">How it works</a>
-    <a href="#work">Work together</a>
-    <a href="#candidates">Candidates</a>
+    <a href="#roles-we-fill">Roles we fill</a>
+    <a href="#services">Services</a>
+    <a href="#results">Track record</a>
+    <a class="keep" href="#roles">Open roles</a>
     <a class="pillbtn" href="mailto:eve@sourcechain.io?subject=Hiring%20plans">Let's talk <span class="arr">→</span></a>
   </div>
 </nav>
@@ -237,30 +315,28 @@ footer a:hover{color:var(--mint)}
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="badge"><i></i>Talent Partner for VC-backed Startups</div>
-        <h1 class="display"><span class="grad">Eve Miller</span></h1>
-        <p class="lead">Hi, I'm Eve, your dedicated recruiter scaling your team and revenue.</p>
-        <p class="body">Silicon Valley track record: 12 years, 500+ hires.<br>Niche outbound sourcing, run with my own AI agents.<br>Hiring across the US, Europe and beyond.</p>
+        <div class="badge"><i></i>Contract · Retained · Recruiting operations</div>
+        <h1 class="display">A dedicated talent partner for your <span class="grad">most critical hires.</span></h1>
+        <p class="lead">Boutique technical and leadership recruiting for venture-backed startups across the US and Europe, from your first engineers to VP-level leaders.</p>
+        <p class="proof">Teams scaled from seed to IPO · 500+ hires · US &amp; Europe</p>
         <div class="ctas">
-          <a class="pillbtn" href="mailto:eve@sourcechain.io?subject=Hiring%20plans">Map your hiring plan <span class="arr">→</span></a>
-          <a class="ghostbtn" href="https://www.linkedin.com/in/eve8" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="pillbtn" href="mailto:eve@sourcechain.io?subject=Hiring%20plans">Start a search <span class="arr">→</span></a>
+          <a class="ghostbtn" href="#services">See services</a>
         </div>
+        <a class="cand-link" href="#roles">Looking for your next role? See open roles →</a>
       </div>
 
-      <div class="console" aria-label="How a search runs">
-        <div class="c-head"><span>A SEARCH, END TO END</span><span class="live"><i></i>RUNS DAILY</span></div>
-        <div class="step"><div class="ic">01</div><div><b>Map the market</b><small>Target companies, teams and past candidates</small></div><div class="st">AGENT</div></div>
-        <div class="step"><div class="ic">02</div><div><b>Verify every profile</b><small>Current role checked the same day</small></div><div class="st">AGENT</div></div>
-        <div class="step"><div class="ic">03</div><div><b>Personal outreach</b><small>Written from each person's real background</small></div><div class="st">AGENT</div></div>
-        <div class="step"><div class="ic">04</div><div><b>Catch every reply</b><small>Email and LinkedIn, logged automatically</small></div><div class="st">AGENT</div></div>
-        <div class="step"><div class="ic">05</div><div><b>Screen, shortlist, close</b><small>Calibrated with your hiring manager</small></div><div class="st">EVE</div></div>
-        <div class="c-foot"><span class="av">E</span>You get a short list of people who fit and are ready to move.</div>
+      <div class="console" aria-label="Why teams hire with Sourcechain">
+        <div class="c-head"><span>WHY TEAMS HIRE WITH SOURCECHAIN</span></div>
+        <div class="pain"><b>A shortlist, not a stack of resumes</b><small>Every candidate is screened against the role before you meet them.</small></div>
+        <div class="pain"><b>Specialists in technical hiring</b><small>Engineering, AI/ML, security and data, plus the go-to-market and leadership hires around them.</small></div>
+        <div class="pain"><b>Startup and enterprise experience</b><small>Teams that grew from seed to IPO, and hires for LinkedIn, Microsoft and Intuit.</small></div>
+        <div class="pain"><b>Flexible engagement</b><small>Contract, retained or project-based, shaped around your hiring plan.</small></div>
       </div>
     </div>
   </div>
-
   <div class="marquee">
-    <div class="cap">Teams I've hired for</div>
+    <div class="cap">Teams we've hired for</div>
     <div class="track" aria-hidden="true">
       <span>LinkedIn</span><span class="sep">✦</span><span>BitGo</span><span class="sep">✦</span><span>Microsoft</span><span class="sep">✦</span><span>Circle</span><span class="sep">✦</span><span>Intuit</span><span class="sep">✦</span><span>Ava Labs</span><span class="sep">✦</span><span>eBay</span><span class="sep">✦</span><span>CertiK</span><span class="sep">✦</span><span>Dropbox</span><span class="sep">✦</span><span>FICO</span><span class="sep">✦</span><span>OpenBlock Labs</span><span class="sep">✦</span><span>CVS</span><span class="sep">✦</span><span>bloXroute Labs</span><span class="sep">✦</span><span>Axelar</span><span class="sep">✦</span><span>Hashflow</span><span class="sep">✦</span><span>Ankr</span><span class="sep">✦</span><span>Intertrust</span><span class="sep">✦</span>
       <span>LinkedIn</span><span class="sep">✦</span><span>BitGo</span><span class="sep">✦</span><span>Microsoft</span><span class="sep">✦</span><span>Circle</span><span class="sep">✦</span><span>Intuit</span><span class="sep">✦</span><span>Ava Labs</span><span class="sep">✦</span><span>eBay</span><span class="sep">✦</span><span>CertiK</span><span class="sep">✦</span><span>Dropbox</span><span class="sep">✦</span><span>FICO</span><span class="sep">✦</span><span>OpenBlock Labs</span><span class="sep">✦</span><span>CVS</span><span class="sep">✦</span><span>bloXroute Labs</span><span class="sep">✦</span><span>Axelar</span><span class="sep">✦</span><span>Hashflow</span><span class="sep">✦</span><span>Ankr</span><span class="sep">✦</span><span>Intertrust</span><span class="sep">✦</span>
@@ -268,101 +344,101 @@ footer a:hover{color:var(--mint)}
   </div>
 </header>
 
+<section id="roles-we-fill">
+  <div class="wrap">
+    <div class="eyebrow rv">Roles we fill</div>
+    <h2 class="display rv">Roles we recruit for.</h2>
+    <div class="fams">
+      <div class="fam rv"><h3>Engineering</h3><p>Backend, full-stack, mobile, platform and SRE, from senior individual contributors to engineering leads.</p></div>
+      <div class="fam rv"><h3>AI, ML &amp; Data</h3><p>ML engineers, research engineers, data scientists and data platform teams.</p></div>
+      <div class="fam rv"><h3>Security</h3><p>Application security, AI security, DevSecOps and cryptography.</p></div>
+      <div class="fam rv"><h3>Product</h3><p>Product managers and product leaders for technical and data products.</p></div>
+      <div class="fam rv"><h3>Go-to-market</h3><p>Sales, business development and marketing, from first hires to leadership.</p></div>
+      <div class="fam rv"><h3>Leadership</h3><p>VP and head-of searches across engineering, finance, sales and product.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="how">
+  <div class="wrap">
+    <div class="eyebrow rv">Services</div>
+    <h2 class="display rv">Shaped around the hires you need.</h2>
+    <div class="svc">
+      <div class="sv rv"><h3>Contract Recruiting</h3><div class="how">Hourly · embedded</div><p>We join your team and run hiring from intake to signed offer, working in your ATS and Slack.</p><div class="best"><span>Best for</span>Startups hiring several roles at once</div></div>
+      <div class="sv rv"><h3>Retained Search</h3><div class="how">Monthly fee + placement fee</div><p>A flat monthly fee with a reduced placement fee per hire, for a defined hiring plan.</p><div class="best"><span>Best for</span>A key hire or a set hiring plan</div></div>
+      <div class="sv feat rv"><h3>Recruiting Operations</h3><div class="how">Project-based</div><p>We help your recruiting or HR team set up better workflows and automation, starting with your biggest bottleneck. Your team stays in charge.</p><div class="best"><span>Best for</span>In-house teams that need to do more</div></div>
+    </div>
+    <p class="terms rv">Terms are shaped around the hires you need and invoiced monthly through a US entity.</p>
+  </div>
+</section>
+
 <section id="results">
   <div class="wrap">
     <div class="eyebrow rv">Track record</div>
-    <h2 class="display rv">From startups scaling fast to enterprise teams.</h2>
-    <div class="bento">
-      <div class="tile t-dark s7 rv"><div class="k">BitGo · one year</div><div class="big">30 → 120</div><h3>Sole recruiting lead</h3><p>Built the recruiting and HR function along the way. BitGo is now publicly listed.</p></div>
-      <div class="tile t-mint s5 rv"><div class="k">OpenBlock Labs</div><div class="big">5 → 45</div><h3>Engineering and research</h3><p>Partnered with the co-founders on engineering and research hiring.</p></div>
-      <div class="tile s4 rv"><div class="k">Ava Labs · 9 months</div><div class="mid">35+</div><h3>Through mainnet launch</h3><p>With a contract recruiting team I built and led.</p></div>
-      <div class="tile t-teal s4 rv"><div class="k">Intertrust</div><div class="mid">90 → 200</div><h3>Company-wide growth</h3><p>Engineering, security, cryptography, sales, finance and product, including VP-level searches.</p></div>
-      <div class="tile s4 rv"><div class="k">bloXroute Labs · 9 months</div><div class="mid">15+</div><h3>Backend to VP Finance</h3><p>From backend and SRE to finance and sales leadership.</p></div>
-      <div class="tile s12 t-wide rv"><div><div class="k">FocusKPI · enterprise clients</div><div class="mid">40+</div></div><div><h3>Data scientists and engineers placed at enterprise clients</h3><p>Generating $1M in billed revenue, with hires at:</p><div class="logos"><span>LinkedIn</span><span>Microsoft</span><span>Intuit</span><span>eBay</span><span>Dropbox</span><span>FICO</span><span>CVS</span></div></div></div>
-    </div>
-    <div class="stats rv">
-      <div class="stat"><b>12</b><span>Years recruiting</span></div>
-      <div class="stat"><b>500+</b><span>Hires</span></div>
-      <div class="stat"><b>US &amp; EU</b><span>Working hours</span></div>
-      <div class="stat"><b>EN · DE · SK</b><span>Languages</span></div>
+    <h2 class="display rv">Teams we've helped build.</h2>
+    <div class="stories">
+      <div class="tile t-dark rv"><div class="k">BitGo</div><div class="big">30 → 120</div><h3>In one year</h3><p>Built the recruiting function from scratch. BitGo is now publicly listed.</p></div>
+      <div class="tile t-mint rv"><div class="k">OpenBlock Labs</div><div class="big">5 → 45</div><h3>Engineering and research</h3><p>Partnered with the co-founders from the earliest hires.</p></div>
+      <div class="tile t-teal rv"><div class="k">Intertrust</div><div class="big">90 → 200</div><h3>Company-wide growth</h3><p>Engineering, security, sales, finance and product, including VP-level searches.</p></div>
     </div>
   </div>
 </section>
 
-<section id="how" class="how">
+<section id="roles" class="forcand">
+  <div class="grid-bg"></div>
   <div class="wrap">
-    <div class="eyebrow rv">How it works</div>
-    <h2 class="display rv">The agents cover the market. I spend my time with people.</h2>
-    <div class="how-grid">
-      <div class="panel agents rv">
-        <span class="tag">◆ What the agents do</span>
-        <h3>Every day, across the whole market.</h3>
-        <ul class="rows">
-          <li><div><b>Map the market</b><span>Target companies and teams researched, profiles matched to the brief, and past candidates resurfaced when they fit a new role.</span></div></li>
-          <li><div><b>Verify before outreach</b><span>Each person's current role is checked the same day, and contact details are verified. Nothing is guessed.</span></div></li>
-          <li><div><b>Reach out and follow up</b><span>Messages written from each person's real background, with follow-ups on schedule.</span></div></li>
-          <li><div><b>Catch every reply</b><span>Email and LinkedIn replies are picked up and logged, and the pipeline updates itself.</span></div></li>
-          <li><div><b>Watch for timing</b><span>Layoffs at target companies are flagged daily, so strong people hear from you early.</span></div></li>
-        </ul>
+    <div class="eyebrow rv">For candidates</div>
+    <h2 class="display rv">Looking for your next role?</h2>
+    <p class="roles-sub rv">These are the roles we're recruiting for right now. Applying takes about two minutes, and a recruiter reads every application.</p>
+    <div class="jobs">
+      <div class="job rv">
+        <div class="co">Global investment firm</div>
+        <h3>Senior AI AppSec Engineer</h3>
+        <ul><li>New York, Southern California or Charlotte</li><li>Hybrid</li><li class="pay">$190K–$304K + bonus</li></ul>
+        <div class="acts"><a class="darkbtn" href="/join?role=Senior%20AI%20AppSec%20Engineer">Apply →</a><a class="ask" href="mailto:eve@sourcechain.io?subject=Senior%20AI%20AppSec%20Engineer">Ask a question</a></div>
       </div>
-      <div class="panel me rv">
-        <span class="tag">● What I do</span>
-        <h3>Where judgment matters.</h3>
-        <ul class="rows">
-          <li><div><b>Intake calibration</b><span>With the hiring manager, on what the role really needs.</span></div></li>
-          <li><div><b>Screen</b><span>For motivation and readiness alongside fit.</span></div></li>
-          <li><div><b>Shortlist</b><span>A small number of strong candidates, each with a clear reason they fit.</span></div></li>
-          <li><div><b>Close</b><span>Through offer, acceptance and start date.</span></div></li>
-        </ul>
-        <div class="outcome">Wider market coverage and a faster first shortlist, without paying for a bigger team.</div>
+      <div class="job rv">
+        <div class="co">Global reinsurance broker</div>
+        <h3>VP, Data Platform Product Manager</h3>
+        <ul><li>London</li><li class="pay">£125K + bonus</li></ul>
+        <div class="acts"><a class="darkbtn" href="/join?role=VP%2C%20Data%20Platform%20Product%20Manager">Apply →</a><a class="ask" href="mailto:eve@sourcechain.io?subject=VP%2C%20Data%20Platform%20Product%20Manager">Ask a question</a></div>
+      </div>
+      <div class="job rv">
+        <div class="co">Quantitative investment firm</div>
+        <h3>Cloud Computing Engineer</h3>
+        <ul><li>New York</li><li>Cloud and high-performance computing</li></ul>
+        <div class="acts"><a class="darkbtn" href="/join?role=Cloud%20Computing%20Engineer">Apply →</a><a class="ask" href="mailto:eve@sourcechain.io?subject=Cloud%20Computing%20Engineer">Ask a question</a></div>
       </div>
     </div>
-  </div>
-</section>
 
-<section id="work">
-  <div class="wrap">
-    <div class="eyebrow rv">Ways to work together</div>
-    <h2 class="display rv">Shaped around the hires you need.</h2>
-    <div class="ways">
-      <div class="way rv"><div class="n">01</div><h3>Hiring partner</h3><p>Embedded on an hourly basis, intake through signed offer, in your ATS and Slack. The agent system comes with me.</p></div>
-      <div class="way rv"><div class="n">02</div><h3>Monthly + placement</h3><p>A flat monthly fee with a reduced placement fee per hire, for a defined hiring plan.</p></div>
-      <div class="way feat rv"><div class="n">03</div><h3>Hiring system for your team<span class="new">NEW</span></h3><p>I set up the same kind of system for your recruiting or HR team: a hiring system plus AI agents, starting with your biggest bottleneck. Your team stays in charge.</p></div>
-    </div>
-    <p class="terms rv">Terms are shaped around the hires you need and invoiced monthly through a US entity.</p>
-    <div class="reach">
-      <div class="rv">
-        <div class="eyebrow">Who I hire</div>
-        <div class="fn"><span>Engineering</span><span>Data &amp; ML</span><span>Security</span><span>Product</span><span>Go-to-market</span><span>Executive</span></div>
-      </div>
-      <p class="rv">From seed-stage startups to enterprises like LinkedIn, Microsoft and Intuit. Most of my work has been in AI, fintech and security, and the same approach carries across tech, from SaaS and developer tools to consumer apps and marketplaces.</p>
-    </div>
-  </div>
-</section>
-
-<div class="cand" id="candidates">
-  <div class="wrap">
-    <div class="cand-box rv">
+    <div class="radar rv" id="candidates">
       <div>
-        <div class="eyebrow">For engineers and operators</div>
-        <h3>Open to the right opportunity?</h3>
-        <p>Share your profile once, and I'll reach out when a role matches what you're looking for. It stays in my own applicant tracking system and is never shared with third parties.</p>
+        <h3>Not seeing the right role? Get on our radar.</h3>
+        <p>Tell us what you want next, and we'll reach out when a matching role opens. Your details stay in our internal system and are never shared with third parties.</p>
       </div>
-      <a class="darkbtn" href="/join">Join the talent network →</a>
+      <a class="darkbtn" href="/join">Join for future openings →</a>
+    </div>
+
+    <div class="faqh rv">Common questions</div>
+    <div class="faq rv">
+      <details><summary>Who is the employer?</summary><p>We share the company name once we've talked and you're interested. Every role here is a real, open position.</p></details>
+      <details><summary>What happens after I apply?</summary><p>A recruiter reviews your profile and gets back to you. If it's a fit, we set up a short call.</p></details>
+      <details><summary>Do you work with candidates outside these locations?</summary><p>Yes, if you're open to relocating or the role allows it. Mention it in your application.</p></details>
+      <details><summary>Is there a fee for candidates?</summary><p>Never. Our clients pay us. Questions? Write to <a href="mailto:eve@sourcechain.io">eve@sourcechain.io</a>.</p></details>
     </div>
   </div>
-</div>
+</section>
 
 <section class="final" id="contact">
   <div class="aurora"><span></span><span></span><span></span></div>
   <div class="wrap">
     <div class="eyebrow" style="color:var(--mint)">Let's talk</div>
     <h2>Planning the next two quarters of hiring? <span class="grad">Let's map it together.</span></h2>
-    <p class="sub">I partner with a small number of companies at a time.</p>
+    <p class="sub">We partner with a small number of companies at a time, so each search gets real attention.</p>
     <a class="mail" href="mailto:eve@sourcechain.io?subject=Hiring%20plans">eve@sourcechain.io <span class="arr">↗</span></a>
     <footer>
       <span>© 2026 Sourcechain LLC</span>
-      <span class="fl"><a href="https://www.linkedin.com/in/eve8" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/eves8" target="_blank" rel="noopener">GitHub</a><a href="/join">Talent network</a></span>
+      <span class="fl"><a href="https://www.linkedin.com/in/eve8" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/eves8" target="_blank" rel="noopener">GitHub</a><a href="#roles">Open roles</a><a href="/join">Talent radar</a></span>
     </footer>
   </div>
 </section>
@@ -380,13 +456,6 @@ footer a:hover{color:var(--mint)}
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
     els.forEach(function(el){io.observe(el)});
   } else { els.forEach(function(el){el.classList.add('in')}); }
-  var steps=document.querySelectorAll('.step'), i=0;
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){steps.forEach(function(s){s.classList.add('on')});return;}
-  function tick(){
-    if(i>=steps.length){ setTimeout(function(){steps.forEach(function(s){s.classList.remove('on')});i=0;setTimeout(tick,500);},2600); return; }
-    steps[i].classList.add('on'); i++; setTimeout(tick,900);
-  }
-  setTimeout(tick,600);
 })();
 </script>
 </body>
