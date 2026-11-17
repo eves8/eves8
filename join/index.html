@@ -120,7 +120,7 @@ textarea{min-height:88px;resize:vertical;line-height:1.5}
 @media (prefers-reduced-motion:reduce){.screen{animation:none}.drop{transition:none}}
 @media (max-width:560px){.grid{grid-template-columns:minmax(0,1fr)}.steps li span{display:none}.actions .btn{flex:1 1 auto}}
 </style>
-<style>.applying{margin:0;padding:12px 16px;border-radius:12px;background:#e6f5f2;color:#0d6662;font-size:15px}.applying b{color:#0f1a19}
+<style>.applying{margin:0;padding:12px 16px;border-radius:12px;background:#e6f5f2;color:#0d6662;font-size:15px}.applying b{color:#0f1a19}.applying label{display:block;font-weight:600;color:#0f1a19;margin-bottom:8px}.applying select{width:100%;font:inherit;font-size:15px;padding:10px 12px;border:1px solid #c9dcd8;border-radius:10px;background:#fff;color:#0f1a19}
 html{color-scheme:light}body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
 </head>
 <body>
@@ -442,7 +442,18 @@ $('#next1').onclick = () => {
 };
 
 const ROLES_OPEN = ['Senior AI AppSec Engineer','VP, Data Platform Product Manager','Cloud Computing Engineer'];
-const APPLY = (function(){ try { const r = new URLSearchParams(location.search).get('role') || ''; return ROLES_OPEN.indexOf(r) >= 0 ? r : ''; } catch(e){ return ''; } })();
+let APPLY = (function(){ try { const r = new URLSearchParams(location.search).get('role') || ''; return ROLES_OPEN.indexOf(r) >= 0 ? r : ''; } catch(e){ return ''; } })();
+const JD = (function(){ try { return new URLSearchParams(location.search).get('jd') === '1'; } catch(e){ return false; } })();
+if (!APPLY && JD){
+  const ap = $('#applying'); ap.hidden = false; ap.textContent = '';
+  const lab = document.createElement('label'); lab.htmlFor = 'jdRole'; lab.textContent = 'Which role would you like the full job description for?';
+  const sel = document.createElement('select'); sel.id = 'jdRole';
+  [''].concat(ROLES_OPEN).forEach(r => { const o = document.createElement('option'); o.value = r; o.textContent = r || 'Choose a role'; sel.append(o); });
+  sel.onchange = () => { APPLY = sel.value; };
+  ap.append(lab, sel);
+  const ld = document.querySelector('#s0 .lead'); if (ld) ld.textContent = "Choose the role, then share your resume and a few details. I'll send you the full job description and review your profile myself.";
+  $('#start').onclick = () => { if (!APPLY){ sel.focus(); sel.style.outline = '2px solid #0d6662'; return; } go(1); };
+}
 if (APPLY){
   $('#applyRole').textContent = APPLY; $('#applying').hidden = false;
   const ld = document.querySelector('#s0 .lead'); if (ld) ld.textContent = "Thanks for applying. Share your resume and a few details, and I'll review your profile myself and get back to you. If this role isn't the right match, I'll keep you in mind for the next one.";
