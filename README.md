@@ -27,12 +27,7 @@ Teams I've hired for: LinkedIn, Microsoft, Intuit, eBay, Dropbox, FICO, CVS, Bit
 
 ### Now hiring
 
-- **Senior AI AppSec Engineer** · Global investment firm · New York, SoCal or Charlotte, hybrid · $190K–$304K + bonus
-- **Senior DevSecOps Engineer** · Global investment firm · New York, Irvine or Charlotte, hybrid · $169K–$270K + bonus
-- **Mobile Engineering Team Lead (iOS)** · Consumer marketplace · New York, hybrid · $180K–$210K
-- **Senior Product Manager** · Live-events consumer app · New York, hybrid · $185K–$220K
-
-Interested, or know someone who'd fit? Message me on [LinkedIn](https://linkedin.com/in/eve8). Not the right role? [Join the talent network](https://sourcechain.io/join) and I'll reach out when one matches.
+See current open roles and apply at **[sourcechain.io/#roles](https://sourcechain.io/#roles)**. Not the right role? [Join for future openings](https://sourcechain.io/join).
 
 ---
 
