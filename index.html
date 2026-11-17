@@ -256,10 +256,15 @@ footer a:hover{color:var(--mint)}
 .pain small{color:#8ea4a1;font-size:14px;line-height:1.45}
 .stories{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
 .stories .tile .big{font-size:clamp(48px,5vw,76px)}
-.fams{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
-.fam{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:28px}
-.fam h3{font-size:20px;font-weight:700;margin-bottom:12px}
-.fam p{color:var(--muted);font-size:15.5px;line-height:1.55}
+.fams{display:block;margin-top:48px;border-top:1px solid var(--ink)}
+.fam{display:grid;grid-template-columns:300px 1fr;gap:32px;align-items:baseline;padding:26px 8px;border-bottom:1px solid var(--line);transition:background .3s,padding .3s}
+.fam:hover{background:var(--white);padding-left:20px}
+.fam h3{font-family:var(--serif);font-weight:400;font-size:clamp(28px,2.8vw,38px);line-height:1.05;letter-spacing:-.015em;color:var(--ink)}
+.fam:hover h3{color:var(--teal)}
+.fam ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px 0}
+.fam li{font-size:17px;font-weight:500;color:var(--ink);line-height:1.5}
+.fam li:not(:last-child)::after{content:"·";color:var(--teal);margin:0 12px;font-weight:700}
+@media (max-width:980px){.fam{grid-template-columns:1fr;gap:10px}}
 .svc{display:grid;grid-template-columns:repeat(5,1fr);grid-auto-rows:auto;gap:14px;margin-top:56px}
 .svc .sv{display:grid;grid-template-rows:subgrid;grid-row:span 5;row-gap:0}
 .sv{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s;will-change:transform}
@@ -301,8 +306,19 @@ footer a:hover{color:var(--mint)}
 .faq p{margin-top:10px;color:#9fb3b0;font-size:15.5px}
 .faq a{color:var(--mint)}
 .faqh{margin-top:72px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7f9794}
+
+.job .tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.job .tags span{font-size:13px;padding:5px 10px;border-radius:999px;background:rgba(127,224,212,.12);color:#d8ece8}
+.job .pay{font-weight:600;font-size:16px;color:#fff;margin-bottom:14px}
+.job ul.bul{list-style:none;margin:0;padding-top:14px;border-top:1px solid rgba(255,255,255,.1)}
+.job ul.bul li{position:relative;padding:4px 0 4px 18px;color:#c9dbd8;font-size:15px;line-height:1.45}
+.job ul.bul li::before{content:"";position:absolute;left:2px;top:12px;width:6px;height:6px;border-radius:50%;background:var(--mint)}
+.jobcta{margin-top:16px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:24px 28px;border-radius:var(--r);border:1px solid rgba(127,224,212,.35);background:rgba(127,224,212,.07);color:#d8ece8;font-size:16px}
+.jobcta>div{flex:1 1 420px;max-width:760px}
+.jobcta b{color:#fff}
+.jobcta .pillbtn{flex-shrink:0}
 @media (max-width:1100px){.svc{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:980px){.stories,.fams,.svc,.faq{grid-template-columns:1fr}.radar{flex-direction:column;align-items:flex-start}}
+@media (max-width:980px){.stories,.svc,.faq{grid-template-columns:1fr}.radar{flex-direction:column;align-items:flex-start}}
 </style>
 </head>
 <body>
@@ -357,13 +373,14 @@ footer a:hover{color:var(--mint)}
   <div class="wrap">
     <div class="eyebrow rv">Roles we fill</div>
     <h2 class="display rv">Roles we recruit for.</h2>
+    <p class="roles-sub rv" style="color:var(--muted)">From first engineers to VP-level leaders, at seed-stage startups and enterprises alike.</p>
     <div class="fams">
-      <div class="fam rv"><h3>Engineering</h3><p>Backend, full-stack, mobile, platform and SRE, from senior individual contributors to engineering leads.</p></div>
-      <div class="fam rv"><h3>AI, ML &amp; Data</h3><p>ML engineers, research engineers, data scientists and data platform teams.</p></div>
-      <div class="fam rv"><h3>Security</h3><p>Application security, AI security, DevSecOps and cryptography.</p></div>
-      <div class="fam rv"><h3>Product</h3><p>Product managers and product leaders for technical and data products.</p></div>
-      <div class="fam rv"><h3>Go-to-market</h3><p>Sales, business development and marketing, from first hires to leadership.</p></div>
-      <div class="fam rv"><h3>Leadership</h3><p>VP and head-of searches across engineering, finance, sales and product.</p></div>
+      <div class="fam rv"><h3>Engineering</h3><ul><li>Backend Engineer</li><li>Full-Stack Engineer</li><li>Mobile Engineer (iOS / Android)</li><li>Platform & SRE</li><li>Staff Engineer</li><li>Engineering Manager</li></ul></div>
+      <div class="fam rv"><h3>AI, ML & Data</h3><ul><li>ML Engineer</li><li>Research Engineer</li><li>Applied AI Engineer</li><li>Data Scientist</li><li>Data Engineer</li></ul></div>
+      <div class="fam rv"><h3>Security</h3><ul><li>Application Security Engineer</li><li>AI Security Engineer</li><li>DevSecOps Engineer</li><li>Security Engineer</li><li>Cryptographer</li></ul></div>
+      <div class="fam rv"><h3>Product & Design</h3><ul><li>Product Manager</li><li>Senior / Principal PM</li><li>Technical PM</li><li>Data Platform PM</li><li>Product Designer</li></ul></div>
+      <div class="fam rv"><h3>Go-to-market</h3><ul><li>Account Executive</li><li>Business Development</li><li>Partnerships Manager</li><li>Marketing Manager</li><li>Head of Sales</li></ul></div>
+      <div class="fam rv"><h3>Leadership</h3><ul><li>VP Engineering</li><li>Engineering Director</li><li>Head of Product</li><li>VP Finance</li><li>VP Sales</li></ul></div>
     </div>
   </div>
 </section>
@@ -400,27 +417,13 @@ footer a:hover{color:var(--mint)}
   <div class="wrap">
     <div class="eyebrow rv">For candidates</div>
     <h2 class="display rv">Looking for your next role?</h2>
-    <p class="roles-sub rv">These are the roles we're recruiting for right now. Applying takes about two minutes, and a recruiter reads every application.</p>
+    <p class="roles-sub rv">These are the roles we're recruiting for right now. A recruiter reads every message and replies personally.</p>
     <div class="jobs">
-      <div class="job rv">
-        <div class="co">Global investment firm</div>
-        <h3>Senior AI AppSec Engineer</h3>
-        <ul><li>New York, Southern California or Charlotte</li><li>Hybrid</li><li class="pay">$190K–$304K + bonus</li></ul>
-        <div class="acts"><a class="darkbtn" href="/join?role=Senior%20AI%20AppSec%20Engineer">Apply →</a><a class="ask" href="mailto:eve@sourcechain.io?subject=Senior%20AI%20AppSec%20Engineer">Ask a question</a></div>
-      </div>
-      <div class="job rv">
-        <div class="co">Global reinsurance broker</div>
-        <h3>VP, Data Platform Product Manager</h3>
-        <ul><li>London</li><li class="pay">£125K + bonus</li></ul>
-        <div class="acts"><a class="darkbtn" href="/join?role=VP%2C%20Data%20Platform%20Product%20Manager">Apply →</a><a class="ask" href="mailto:eve@sourcechain.io?subject=VP%2C%20Data%20Platform%20Product%20Manager">Ask a question</a></div>
-      </div>
-      <div class="job rv">
-        <div class="co">Quantitative investment firm</div>
-        <h3>Cloud Computing Engineer</h3>
-        <ul><li>New York</li><li>Cloud and high-performance computing</li></ul>
-        <div class="acts"><a class="darkbtn" href="/join?role=Cloud%20Computing%20Engineer">Apply →</a><a class="ask" href="mailto:eve@sourcechain.io?subject=Cloud%20Computing%20Engineer">Ask a question</a></div>
-      </div>
+      <div class="job rv"><div class="co">Global investment firm</div><h3>Senior AI AppSec Engineer</h3><div class="tags"><span>New York, Southern California or Charlotte</span><span>Hybrid · 3 days in office</span></div><div class="pay">$154K–$304K base + bonus, by location</div><ul class="bul"><li>Hands-on AppSec: secure code review, SAST/SCA in CI/CD and threat modeling</li><li>Help secure the firm's growing AI and LLM applications (AI experience is a plus)</li><li>15% company 401(k) contribution</li></ul></div>
+      <div class="job rv"><div class="co">Global reinsurance broker</div><h3>VP, Data Platform Product Manager</h3><div class="tags"><span>London</span></div><div class="pay">Around £125K base + bonus</div><ul class="bul"><li>Own a large-scale data platform used by teams across the business</li><li>Ship AI and data products for internal experts and clients</li><li>Start-up style team inside a global firm</li></ul></div>
+      <div class="job rv"><div class="co">Quantitative investment firm</div><h3>Cloud Computing Engineer</h3><div class="tags"><span>New York</span><span>Hybrid · 3+ days in office</span></div><div class="pay">$180K–$250K base + bonus</div><ul class="bul"><li>Scale the cloud computing platform behind the firm's research</li><li>GPU compute, job scheduling, containers and infrastructure as code</li><li>Small, flat team working directly with researchers</li></ul></div>
     </div>
+    <div class="jobcta rv"><div><b>Interested in one of these roles?</b> Email us with the role title and your LinkedIn or resume, and we'll send you the full job description.</div><a class="pillbtn" href="mailto:eve@sourcechain.io?subject=Full%20job%20description%20request">Request the full JD <span class="arr">→</span></a></div>
 
     <div class="radar rv" id="candidates">
       <div>
@@ -433,7 +436,7 @@ footer a:hover{color:var(--mint)}
     <div class="faqh rv">Common questions</div>
     <div class="faq rv">
       <details><summary>Who is the employer?</summary><p>We share the company name once we've talked and you're interested. Every role here is a real, open position.</p></details>
-      <details><summary>What happens after I apply?</summary><p>A recruiter reviews your profile and gets back to you. If it's a fit, we set up a short call.</p></details>
+      <details><summary>What happens after I email?</summary><p>We send you the full job description and review your profile. If it's a fit, we set up a short call.</p></details>
       <details><summary>Do you work with candidates outside these locations?</summary><p>Yes, if you're open to relocating or the role allows it. Mention it in your application.</p></details>
       <details><summary>Is there a fee for candidates?</summary><p>Never. Our clients pay us. Questions? Write to <a href="mailto:eve@sourcechain.io">eve@sourcechain.io</a>.</p></details>
     </div>
