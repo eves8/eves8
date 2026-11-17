@@ -328,6 +328,15 @@ footer a:hover{color:var(--mint)}
 .why h3{font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.15;color:var(--ink);margin-bottom:10px}
 .why p{color:#26302e;font-size:15.5px;line-height:1.55}
 @media (max-width:980px){.whys{grid-template-columns:1fr}}
+
+.trwrap{margin-top:48px;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.trtrack{display:flex;gap:16px;width:max-content;animation:scroll 110s linear infinite;padding:8px 0 16px}
+.trwrap:hover .trtrack{animation-play-state:paused}
+.tr{flex:none;width:300px;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:26px 24px;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.tr:hover{transform:translateY(-4px);box-shadow:0 22px 48px rgba(15,26,25,.1);border-color:#bfe6de}
+.tr h3{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.05;color:var(--ink);margin-bottom:12px}
+.tr .st{display:inline-block;font-size:13px;font-weight:600;padding:5px 11px;border-radius:999px;background:#e3f5f1;color:var(--teal);margin-bottom:12px}
+.tr p{color:#26302e;font-size:15px;line-height:1.5}
 @media (max-width:1100px){.svc{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:980px){.stories,.svc,.faq{grid-template-columns:1fr}.radar{flex-direction:column;align-items:flex-start}}
 </style>
@@ -431,11 +440,7 @@ footer a:hover{color:var(--mint)}
   <div class="wrap">
     <div class="eyebrow rv">Track record</div>
     <h2 class="display rv">Teams we've helped build.</h2>
-    <div class="stories">
-      <div class="tile t-dark rv"><div class="k">BitGo</div><div class="big">30 → 120</div><h3>In one year</h3><p>Recruiting built from scratch. Now publicly listed.</p></div>
-      <div class="tile t-mint rv"><div class="k">OpenBlock Labs</div><div class="big">5 → 45</div><h3>Engineering and research</h3><p>Partnered with the co-founders from the earliest hires.</p></div>
-      <div class="tile t-teal rv"><div class="k">Intertrust</div><div class="big">90 → 200</div><h3>Company-wide growth</h3><p>Engineering, security, sales, finance and product, up to VP.</p></div>
-    </div>
+    <div class="trwrap rv"><div class="trtrack"><div class="tr"><h3>BitGo</h3><span class="st">+300% in one year</span><p>Built recruiting from scratch. Engineering to executive.</p></div><div class="tr"><h3>OpenBlock Labs</h3><span class="st">+800% growth</span><p>Engineering and research, with the co-founders.</p></div><div class="tr"><h3>Intertrust</h3><span class="st">+122% growth</span><p>Engineering, security, cryptography, sales, finance, product, VP.</p></div><div class="tr"><h3>Ava Labs</h3><span class="st">+130% team growth</span><p>40+ hires in 9 months, through mainnet launch.</p></div><div class="tr"><h3>bloXroute Labs</h3><span class="st">+130% team growth</span><p>20+ hires: backend, SRE, VP Finance, sales leadership.</p></div><div class="tr"><h3>Circle</h3><p>Recruiting partner.</p></div><div class="tr"><h3>CertiK</h3><p>Recruiting partner.</p></div><div class="tr"><h3>Axelar</h3><p>Recruiting partner.</p></div><div class="tr"><h3>Hashflow</h3><p>Recruiting partner.</p></div><div class="tr"><h3>Ankr</h3><p>Recruiting partner.</p></div><div class="tr"><h3>LinkedIn</h3><p>Data scientists and engineers.</p></div><div class="tr"><h3>Microsoft</h3><p>Data scientists and engineers.</p></div><div class="tr"><h3>Intuit</h3><p>Data scientists and engineers.</p></div><div class="tr"><h3>eBay</h3><p>Data scientists and engineers.</p></div><div class="tr"><h3>Dropbox</h3><p>Data scientists and engineers.</p></div><div class="tr"><h3>FICO</h3><p>Data scientists and engineers.</p></div><div class="tr"><h3>CVS</h3><p>Data scientists and engineers.</p></div><div class="tr" aria-hidden="true"><h3>BitGo</h3><span class="st">+300% in one year</span><p>Built recruiting from scratch. Engineering to executive.</p></div><div class="tr" aria-hidden="true"><h3>OpenBlock Labs</h3><span class="st">+800% growth</span><p>Engineering and research, with the co-founders.</p></div><div class="tr" aria-hidden="true"><h3>Intertrust</h3><span class="st">+122% growth</span><p>Engineering, security, cryptography, sales, finance, product, VP.</p></div><div class="tr" aria-hidden="true"><h3>Ava Labs</h3><span class="st">+130% team growth</span><p>40+ hires in 9 months, through mainnet launch.</p></div><div class="tr" aria-hidden="true"><h3>bloXroute Labs</h3><span class="st">+130% team growth</span><p>20+ hires: backend, SRE, VP Finance, sales leadership.</p></div><div class="tr" aria-hidden="true"><h3>Circle</h3><p>Recruiting partner.</p></div><div class="tr" aria-hidden="true"><h3>CertiK</h3><p>Recruiting partner.</p></div><div class="tr" aria-hidden="true"><h3>Axelar</h3><p>Recruiting partner.</p></div><div class="tr" aria-hidden="true"><h3>Hashflow</h3><p>Recruiting partner.</p></div><div class="tr" aria-hidden="true"><h3>Ankr</h3><p>Recruiting partner.</p></div><div class="tr" aria-hidden="true"><h3>LinkedIn</h3><p>Data scientists and engineers.</p></div><div class="tr" aria-hidden="true"><h3>Microsoft</h3><p>Data scientists and engineers.</p></div><div class="tr" aria-hidden="true"><h3>Intuit</h3><p>Data scientists and engineers.</p></div><div class="tr" aria-hidden="true"><h3>eBay</h3><p>Data scientists and engineers.</p></div><div class="tr" aria-hidden="true"><h3>Dropbox</h3><p>Data scientists and engineers.</p></div><div class="tr" aria-hidden="true"><h3>FICO</h3><p>Data scientists and engineers.</p></div><div class="tr" aria-hidden="true"><h3>CVS</h3><p>Data scientists and engineers.</p></div></div></div>
   </div>
 </section>
 
