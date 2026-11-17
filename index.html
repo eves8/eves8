@@ -317,6 +317,15 @@ footer a:hover{color:var(--mint)}
 .jobcta>div{flex:1 1 420px;max-width:760px}
 .jobcta b{color:#fff}
 .jobcta .pillbtn{flex-shrink:0}
+
+#why{background:var(--paper);padding-top:0}
+.whys{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.why{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:28px 26px;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.why:hover{transform:translateY(-4px);box-shadow:0 22px 48px rgba(15,26,25,.1);border-color:#bfe6de}
+.why span{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#e3f5f1;color:var(--teal);font-family:var(--mono);font-size:12px;margin-bottom:16px}
+.why h3{font-family:var(--serif);font-weight:400;font-size:24px;line-height:1.15;color:var(--ink);margin-bottom:10px}
+.why p{color:#26302e;font-size:15.5px;line-height:1.55}
+@media (max-width:980px){.whys{grid-template-columns:1fr}}
 @media (max-width:1100px){.svc{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:980px){.stories,.svc,.faq{grid-template-columns:1fr}.radar{flex-direction:column;align-items:flex-start}}
 </style>
@@ -327,6 +336,7 @@ footer a:hover{color:var(--mint)}
   <a class="brand" href="#top"><span class="dot"></span>SOURCECHAIN</a>
   <div class="links">
     <a href="#roles-we-fill">Roles we fill</a>
+    <a href="#why">Why us</a>
     <a href="#services">Services</a>
     <a href="#results">Track record</a>
     <a class="keep" href="#roles">Open roles</a>
@@ -342,7 +352,7 @@ footer a:hover{color:var(--mint)}
       <div>
         <div class="badge"><i></i>Sourcing · Full-cycle · Embedded · Retained · Contingency</div>
         <h1 class="display">A dedicated talent partner for your <span class="grad">most critical hires.</span></h1>
-        <p class="lead">Boutique technical and leadership recruiting for venture-backed startups across the US and Europe, from your first engineers to VP-level leaders.</p>
+        <p class="lead">Boutique technical and leadership recruiting for venture-backed startups across the US and Europe.</p>
         <p class="proof">Teams scaled from seed to IPO · 500+ hires · US &amp; Europe</p>
         <div class="ctas">
           <a class="pillbtn" href="mailto:eve@sourcechain.io?subject=Hiring%20plans">Start a search <span class="arr">→</span></a>
@@ -353,10 +363,10 @@ footer a:hover{color:var(--mint)}
 
       <div class="console" aria-label="Why teams hire with Sourcechain">
         <div class="c-head"><span>WHY TEAMS HIRE WITH SOURCECHAIN</span></div>
-        <div class="pain"><b>A shortlist, not a stack of resumes</b><small>Every candidate is screened against the role before you meet them.</small></div>
-        <div class="pain"><b>Specialists in technical hiring</b><small>Engineering, AI/ML, security and data, plus the go-to-market and leadership hires around them.</small></div>
-        <div class="pain"><b>Startup and enterprise experience</b><small>Teams that grew from seed to IPO, and hires for LinkedIn, Microsoft and Intuit.</small></div>
-        <div class="pain"><b>Flexible engagement</b><small>Month-to-month plans with transparent pricing, or embedded support when you scale.</small></div>
+        <div class="pain"><b>Fast and accurate</b><small>Verified profiles. Searches start immediately.</small></div>
+        <div class="pain"><b>Relentless follow-through</b><small>Daily outreach and follow-up. No search stalls.</small></div>
+        <div class="pain"><b>Calibrated as we go</b><small>Sharp intake, scorecards, early recalibration.</small></div>
+        <div class="pain"><b>Transparent and trustworthy</b><small>Published pricing. Honest, regular updates.</small></div>
       </div>
     </div>
   </div>
@@ -373,7 +383,7 @@ footer a:hover{color:var(--mint)}
   <div class="wrap">
     <div class="eyebrow rv">Roles we fill</div>
     <h2 class="display rv">Roles we recruit for.</h2>
-    <p class="roles-sub rv" style="color:var(--muted)">From first engineers to VP-level leaders, at seed-stage startups and enterprises alike.</p>
+    <p class="roles-sub rv" style="color:var(--muted)">From first engineers to VP-level leaders.</p>
     <div class="fams">
       <div class="fam rv"><h3>Engineering</h3><ul><li>Backend Engineer</li><li>Full-Stack Engineer</li><li>Mobile Engineer (iOS / Android)</li><li>Platform & SRE</li><li>Staff Engineer</li><li>Engineering Manager</li></ul></div>
       <div class="fam rv"><h3>AI, ML & Data</h3><ul><li>ML Engineer</li><li>Research Engineer</li><li>Applied AI Engineer</li><li>Data Scientist</li><li>Data Engineer</li></ul></div>
@@ -385,17 +395,32 @@ footer a:hover{color:var(--mint)}
   </div>
 </section>
 
+<section id="why">
+  <div class="wrap">
+    <div class="eyebrow rv">Why Sourcechain</div>
+    <h2 class="display rv">Quality you can see at every step.</h2>
+    <div class="whys">
+      <div class="why rv"><span>01</span><h3>High-quality sourcing</h3><p>Passive talent, screened against your must-haves.</p></div>
+      <div class="why rv"><span>02</span><h3>Personal outreach, custom pitch</h3><p>Tailored messages. A pitch built on your story.</p></div>
+      <div class="why rv"><span>03</span><h3>Candidate experience that builds your brand</h3><p>Clear briefs, honest pay, a respectful process.</p></div>
+      <div class="why rv"><span>04</span><h3>Honest advice</h3><p>Straight talk on market, pay and process.</p></div>
+      <div class="why rv"><span>05</span><h3>Dedicated partnership</h3><p>A few clients at a time. Full focus on yours.</p></div>
+      <div class="why rv"><span>06</span><h3>Deep technical range</h3><p>Engineering, AI/ML, security, go-to-market and leadership.</p></div>
+    </div>
+  </div>
+</section>
+
 <section id="services" class="how">
   <div class="wrap">
     <div class="eyebrow rv">Services</div>
     <h2 class="display rv">Transparent pricing. Seamless engagement.</h2>
     <p class="roles-sub rv" style="color:var(--muted)">Start right away, scale up or pause month to month.</p>
     <div class="svc">
-      <div class="sv rv"><div class="how">Low volume</div><h3>Sourcing</h3><div class="price">$5,800<small>per month · month to month</small></div><p>We find, engage and qualify candidates, then hand them to your team ready for interviews.</p><div class="best"><span>Best for</span>A few open roles and a team that runs its own interviews</div></div>
-      <div class="sv rv"><div class="how">Low volume</div><h3>Full-Cycle Recruiting</h3><div class="price">$7,800<small>per month · month to month</small></div><p>We run each search end to end: sourcing, screening, interview coordination, offers and closing.</p><div class="best"><span>Best for</span>A few open roles and no recruiter in-house</div></div>
-      <div class="sv rv"><div class="how">High volume</div><h3>Embedded Recruiting</h3><div class="price">From $11,800<small>per month · 3-month minimum</small></div><p>We work inside your team, on your email, ATS and tools, as your talent function while you scale.</p><div class="best"><span>Best for</span>10+ open roles at once</div></div>
-      <div class="sv rv"><div class="how">Key hires</div><h3>Retained Search</h3><div class="price">$2,800<small>per month + 15% of first-year base per hire</small></div><p>A priority, exclusive search: active outreach every week, a calibrated shortlist and regular updates until the role is filled.</p><div class="best"><span>Best for</span>One or two critical or leadership hires</div></div>
-      <div class="sv rv"><div class="how">Pay on hire</div><h3>Contingency</h3><div class="price">25%<small>of first-year base · non-exclusive, no upfront fee</small></div><p>Best-effort introductions from our existing network when we have a strong match. No dedicated search, priority or reporting.</p><div class="best"><span>Best for</span>Roles with flexible timing</div></div>
+      <div class="sv rv"><div class="how">Low volume</div><h3>Sourcing</h3><div class="price">$5,800<small>per month · month to month</small></div><p>We find, engage and qualify candidates for your team to interview.</p><div class="best"><span>Best for</span>A few open roles and a team that runs its own interviews</div></div>
+      <div class="sv rv"><div class="how">Low volume</div><h3>Full-Cycle Recruiting</h3><div class="price">$7,800<small>per month · month to month</small></div><p>End to end: sourcing, screening, coordination, offers and closing.</p><div class="best"><span>Best for</span>A few open roles and no recruiter in-house</div></div>
+      <div class="sv rv"><div class="how">High volume</div><h3>Embedded Recruiting</h3><div class="price">From $11,800<small>per month · 3-month minimum</small></div><p>Inside your team, on your tools, as your talent function.</p><div class="best"><span>Best for</span>10+ open roles at once</div></div>
+      <div class="sv rv"><div class="how">Key hires</div><h3>Retained Search</h3><div class="price">$2,800<small>per month + 15% of first-year base per hire</small></div><p>Priority, exclusive search with weekly outreach until filled.</p><div class="best"><span>Best for</span>One or two critical or leadership hires</div></div>
+      <div class="sv rv"><div class="how">Pay on hire</div><h3>Contingency</h3><div class="price">25%<small>of first-year base · non-exclusive, no upfront fee</small></div><p>Best-effort introductions from our network. No dedicated search.</p><div class="best"><span>Best for</span>Roles with flexible timing</div></div>
     </div>
     <p class="terms rv">Transparent pricing, billed monthly. Month-to-month plans can be paused with 7 days' notice. USD for US companies, EUR for European companies.</p>
   </div>
@@ -406,9 +431,9 @@ footer a:hover{color:var(--mint)}
     <div class="eyebrow rv">Track record</div>
     <h2 class="display rv">Teams we've helped build.</h2>
     <div class="stories">
-      <div class="tile t-dark rv"><div class="k">BitGo</div><div class="big">30 → 120</div><h3>In one year</h3><p>Built the recruiting function from scratch. BitGo is now publicly listed.</p></div>
+      <div class="tile t-dark rv"><div class="k">BitGo</div><div class="big">30 → 120</div><h3>In one year</h3><p>Recruiting built from scratch. Now publicly listed.</p></div>
       <div class="tile t-mint rv"><div class="k">OpenBlock Labs</div><div class="big">5 → 45</div><h3>Engineering and research</h3><p>Partnered with the co-founders from the earliest hires.</p></div>
-      <div class="tile t-teal rv"><div class="k">Intertrust</div><div class="big">90 → 200</div><h3>Company-wide growth</h3><p>Engineering, security, sales, finance and product, including VP-level searches.</p></div>
+      <div class="tile t-teal rv"><div class="k">Intertrust</div><div class="big">90 → 200</div><h3>Company-wide growth</h3><p>Engineering, security, sales, finance and product, up to VP.</p></div>
     </div>
   </div>
 </section>
@@ -418,27 +443,27 @@ footer a:hover{color:var(--mint)}
   <div class="wrap">
     <div class="eyebrow rv">For candidates</div>
     <h2 class="display rv">Looking for your next role?</h2>
-    <p class="roles-sub rv">These are the roles we're recruiting for right now. A recruiter reads every message and replies personally.</p>
+    <p class="roles-sub rv">Roles we're recruiting for now.</p>
     <div class="jobs">
       <div class="job rv"><div class="co">Global investment firm</div><h3>Senior AI AppSec Engineer</h3><div class="tags"><span>New York, Southern California or Charlotte</span><span>Hybrid · 3 days in office</span></div><div class="pay">$154K–$304K base + bonus, by location</div><ul class="bul"><li>Hands-on AppSec: secure code review, SAST/SCA in CI/CD and threat modeling</li><li>Help secure the firm's growing AI and LLM applications (AI experience is a plus)</li><li>15% company 401(k) contribution</li></ul></div>
       <div class="job rv"><div class="co">Global reinsurance broker</div><h3>VP, Data Platform Product Manager</h3><div class="tags"><span>London</span></div><div class="pay">Around £125K base + bonus</div><ul class="bul"><li>Own a large-scale data platform used by teams across the business</li><li>Ship AI and data products for internal experts and clients</li><li>Start-up style team inside a global firm</li></ul></div>
       <div class="job rv"><div class="co">Quantitative investment firm</div><h3>Cloud Computing Engineer</h3><div class="tags"><span>New York</span><span>Hybrid · 3+ days in office</span></div><div class="pay">$180K–$250K base + bonus</div><ul class="bul"><li>Scale the cloud computing platform behind the firm's research</li><li>GPU compute, job scheduling, containers and infrastructure as code</li><li>Small, flat team working directly with researchers</li></ul></div>
     </div>
-    <div class="jobcta rv"><div><b>Interested in one of these roles?</b> Email us with the role title and your LinkedIn or resume, and we'll send you the full job description.</div><a class="pillbtn" href="mailto:eve@sourcechain.io?subject=Full%20job%20description%20request">Request the full JD <span class="arr">→</span></a></div>
+    <div class="jobcta rv"><div><b>Interested?</b> Email the role title and your LinkedIn or resume. We'll send the full job description.</div><a class="pillbtn" href="mailto:eve@sourcechain.io?subject=Full%20job%20description%20request">Request the full JD <span class="arr">→</span></a></div>
 
     <div class="radar rv" id="candidates">
       <div>
         <h3>Not seeing the right role? Get on our radar.</h3>
-        <p>Tell us what you want next, and we'll reach out when a matching role opens. Your details stay in our internal system and are never shared with third parties.</p>
+        <p>Tell us what you want next. We'll reach out when a matching role opens. Your details stay private.</p>
       </div>
       <a class="darkbtn" href="/join">Join for future openings →</a>
     </div>
 
     <div class="faqh rv">Common questions</div>
     <div class="faq rv">
-      <details><summary>Who is the employer?</summary><p>We share the company name once we've talked and you're interested. Every role here is a real, open position.</p></details>
-      <details><summary>What happens after I email?</summary><p>We send you the full job description and review your profile. If it's a fit, we set up a short call.</p></details>
-      <details><summary>Do you work with candidates outside these locations?</summary><p>Yes, if you're open to relocating or the role allows it. Mention it in your application.</p></details>
+      <details><summary>Who is the employer?</summary><p>We share it once we've talked. Every role here is real and open.</p></details>
+      <details><summary>What happens after I email?</summary><p>We send the full job description. If it's a fit, we set up a short call.</p></details>
+      <details><summary>Do you work with candidates outside these locations?</summary><p>Yes, if you're open to relocating. Just mention it.</p></details>
       <details><summary>Is there a fee for candidates?</summary><p>Never. Our clients pay us. Questions? Write to <a href="mailto:eve@sourcechain.io">eve@sourcechain.io</a>.</p></details>
     </div>
   </div>
@@ -449,7 +474,7 @@ footer a:hover{color:var(--mint)}
   <div class="wrap">
     <div class="eyebrow" style="color:var(--mint)">Let's talk</div>
     <h2>Planning the next two quarters of hiring? <span class="grad">Let's map it together.</span></h2>
-    <p class="sub">We partner with a small number of companies at a time, so each search gets real attention.</p>
+    <p class="sub">We partner with a small number of companies at a time.</p>
     <a class="mail" href="mailto:eve@sourcechain.io?subject=Hiring%20plans">eve@sourcechain.io <span class="arr">↗</span></a>
     <footer>
       <span>© 2026 Sourcechain LLC</span>
