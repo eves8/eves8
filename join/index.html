@@ -120,7 +120,8 @@ textarea{min-height:88px;resize:vertical;line-height:1.5}
 @media (prefers-reduced-motion:reduce){.screen{animation:none}.drop{transition:none}}
 @media (max-width:560px){.grid{grid-template-columns:minmax(0,1fr)}.steps li span{display:none}.actions .btn{flex:1 1 auto}}
 </style>
-<style>html{color-scheme:light}body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
+<style>.applying{margin:0;padding:12px 16px;border-radius:12px;background:#e6f5f2;color:#0d6662;font-size:15px}.applying b{color:#0f1a19}
+html{color-scheme:light}body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
 </head>
 <body>
 <div class="wrap">
@@ -141,6 +142,7 @@ textarea{min-height:88px;resize:vertical;line-height:1.5}
         <h1>Hi, I'm Eve.</h1>
         <p class="sub">Talent Acquisition Partner at Sourcechain</p>
       </div>
+      <p class="applying" id="applying" hidden>Applying for <b id="applyRole"></b></p>
       <p class="about">Sourcechain is my small, boutique recruiting practice. I run every search myself, partnering with startups and tech companies to hire engineers, product people and leaders. You can find me on <a href="https://www.linkedin.com/in/eve8/" target="_blank" rel="noopener">LinkedIn</a> and <a href="https://github.com/eves8" target="_blank" rel="noopener">GitHub</a>.</p>
       <p class="lead">Thanks for taking a moment. If you'd like me to contact you when I have an open role that matches what you're looking for, share a few details here.</p>
       <ul class="promise">
@@ -439,12 +441,18 @@ $('#next1').onclick = () => {
   e.hidden = true; go(2);
 };
 
+const ROLES_OPEN = ['Senior AI AppSec Engineer','VP, Data Platform Product Manager','Cloud Computing Engineer'];
+const APPLY = (function(){ try { const r = new URLSearchParams(location.search).get('role') || ''; return ROLES_OPEN.indexOf(r) >= 0 ? r : ''; } catch(e){ return ''; } })();
+if (APPLY){
+  $('#applyRole').textContent = APPLY; $('#applying').hidden = false;
+  const ld = document.querySelector('#s0 .lead'); if (ld) ld.textContent = "Thanks for applying. Share your resume and a few details, and I'll review your profile myself and get back to you. If this role isn't the right match, I'll keep you in mind for the next one.";
+}
 function collect(){
   const v = k => $('#' + k).value.trim(), c = k => state.combos[k].vals.join(', ');
   return {
     name:v('name'), email:v('email').toLowerCase(), linkedin:v('li'), title:v('title'), company:v('company'), city:v('city'), years:v('yrs'),
-    roles:c('roles'), level:c('level'), setup:c('setup'), where:c('where'), relocate:c('relocate'), auth:c('auth'), salary:c('salary'), status:c('status'), start:c('start'),
-    note:[v('avoid') && 'Not interested in: ' + v('avoid'), v('note')].filter(Boolean).join('\n\n'), avoid:v('avoid'), resume: state.file ? state.file.name : '', consent: $('#consent').checked, hp: v('website'), t: Date.now() - T0
+    applying_for: APPLY, roles:c('roles') || APPLY, level:c('level'), setup:c('setup'), where:c('where'), relocate:c('relocate'), auth:c('auth'), salary:c('salary'), status:c('status'), start:c('start'),
+    note:[APPLY && 'Applying for: ' + APPLY, v('avoid') && 'Not interested in: ' + v('avoid'), v('note')].filter(Boolean).join('\n\n'), avoid:v('avoid'), resume: state.file ? state.file.name : '', consent: $('#consent').checked, hp: v('website'), t: Date.now() - T0
   };
 }
 $('#prefs').addEventListener('submit', e => e.preventDefault());
@@ -467,7 +475,7 @@ $('#submit').onclick = async () => {
     return;
   }
   $('#thanks').textContent = 'Thank you, ' + (d.name.split(' ')[0] || 'and welcome') + '!';
-  const rows = [['Name', d.name], ['Email', d.email], ['Roles', d.roles], ['Level', d.level], ['Where', d.where], ['Setup', d.setup], ['Minimum base', d.salary], ['Looking', d.status]].filter(r => r[1]);
+  const rows = [['Applying for', d.applying_for], ['Name', d.name], ['Email', d.email], ['Roles', d.roles], ['Level', d.level], ['Where', d.where], ['Setup', d.setup], ['Minimum base', d.salary], ['Looking', d.status]].filter(r => r[1]);
   const dl = $('#summary'); dl.innerHTML = '';
   rows.forEach(([k, val]) => { const dt = document.createElement('dt'); dt.textContent = k; const dd = document.createElement('dd'); dd.textContent = val; dl.append(dt, dd); });
   go(3);
